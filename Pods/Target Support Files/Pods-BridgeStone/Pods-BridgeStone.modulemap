@@ -1,0 +1,6 @@
+framework module Pods_BridgeStone {
+  umbrella header "Pods-BridgeStone-umbrella.h"
+
+  export *
+  module * { export * }
+}

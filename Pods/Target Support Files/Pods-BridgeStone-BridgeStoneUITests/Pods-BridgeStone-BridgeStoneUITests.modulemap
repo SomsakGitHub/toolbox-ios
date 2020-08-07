@@ -1,0 +1,6 @@
+framework module Pods_BridgeStone_BridgeStoneUITests {
+  umbrella header "Pods-BridgeStone-BridgeStoneUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

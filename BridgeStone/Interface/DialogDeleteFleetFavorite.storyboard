@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Dialog Delete Fleet FavoriteVC-->
+        <scene sceneID="Ciu-a8-A6V">
+            <objects>
+                <viewController storyboardIdentifier="dialogDeleteFleetFavorite" id="VSO-gB-Hk2" customClass="DialogDeleteFleetFavoriteVC" customModule="BridgeStone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="THS-Mm-NbN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3e-hC-hjG" customClass="ViewRound" customModule="BridgeStone" customModuleProvider="target">
+                                <rect key="frame" x="20.5" y="358.5" width="373" height="179"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="คุณต้องการลบออกจาก Fleet โปรด?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ra8-sO-acG">
+                                        <rect key="frame" x="0.0" y="30" width="373" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="P63-yt-Yvf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                        <color key="textColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTw-ww-aoS" customClass="ButtonRound" customModule="BridgeStone" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="85" width="142" height="49"/>
+                                        <color key="backgroundColor" red="0.27058823529411763" green="0.30980392156862746" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="ยกเลิก">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cancelClick:" destination="VSO-gB-Hk2" eventType="touchUpInside" id="ULq-5J-3hb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpn-9V-bmV" customClass="ButtonRound" customModule="BridgeStone" customModuleProvider="target">
+                                        <rect key="frame" x="201" y="85" width="142" height="49"/>
+                                        <color key="backgroundColor" red="0.74117647058823533" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="บันทึก">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="saveClick:" destination="VSO-gB-Hk2" eventType="touchUpInside" id="U8j-ui-b2w"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16470588235294117" green="0.1803921568627451" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Hpn-9V-bmV" secondAttribute="trailing" constant="30" id="5uY-ta-aX5"/>
+                                    <constraint firstItem="Hpn-9V-bmV" firstAttribute="top" secondItem="Ra8-sO-acG" secondAttribute="bottom" constant="30" id="6JJ-Bs-xo1"/>
+                                    <constraint firstItem="Hpn-9V-bmV" firstAttribute="width" secondItem="K3e-hC-hjG" secondAttribute="width" multiplier="0.38" id="8W5-Ph-clY"/>
+                                    <constraint firstItem="Ra8-sO-acG" firstAttribute="top" secondItem="K3e-hC-hjG" secondAttribute="top" constant="30" id="EOL-Pv-nUk"/>
+                                    <constraint firstItem="Ra8-sO-acG" firstAttribute="width" secondItem="K3e-hC-hjG" secondAttribute="width" id="Kx0-Cc-BGA"/>
+                                    <constraint firstItem="rTw-ww-aoS" firstAttribute="width" secondItem="K3e-hC-hjG" secondAttribute="width" multiplier="0.38" id="Qxj-2f-hFe"/>
+                                    <constraint firstItem="Hpn-9V-bmV" firstAttribute="height" secondItem="K3e-hC-hjG" secondAttribute="height" multiplier="0.275" id="Yj9-Aw-6YK"/>
+                                    <constraint firstItem="rTw-ww-aoS" firstAttribute="top" secondItem="Ra8-sO-acG" secondAttribute="bottom" constant="30" id="o44-6R-frX"/>
+                                    <constraint firstItem="rTw-ww-aoS" firstAttribute="leading" secondItem="K3e-hC-hjG" secondAttribute="leading" constant="30" id="ocw-Rt-BcO"/>
+                                    <constraint firstItem="rTw-ww-aoS" firstAttribute="height" secondItem="K3e-hC-hjG" secondAttribute="height" multiplier="0.275" id="qNK-sS-aos"/>
+                                    <constraint firstItem="Ra8-sO-acG" firstAttribute="centerX" secondItem="K3e-hC-hjG" secondAttribute="centerX" id="uQr-Lz-9TU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K3e-hC-hjG" firstAttribute="height" secondItem="THS-Mm-NbN" secondAttribute="height" multiplier="0.2" id="WN4-MD-SRA"/>
+                            <constraint firstItem="K3e-hC-hjG" firstAttribute="width" secondItem="THS-Mm-NbN" secondAttribute="width" multiplier="0.9" id="Xs3-bn-POc"/>
+                            <constraint firstItem="K3e-hC-hjG" firstAttribute="centerY" secondItem="THS-Mm-NbN" secondAttribute="centerY" id="w7t-zS-EzG"/>
+                            <constraint firstItem="K3e-hC-hjG" firstAttribute="centerX" secondItem="THS-Mm-NbN" secondAttribute="centerX" id="xML-kh-bgQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XOj-Q2-L1X"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelBTN" destination="rTw-ww-aoS" id="FVR-nN-Q6Z"/>
+                        <outlet property="messagesLabel" destination="Ra8-sO-acG" id="SGL-eP-QAs"/>
+                        <outlet property="saveBTN" destination="Hpn-9V-bmV" id="Wa9-KB-EMh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hml-FW-P0c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="272" y="84"/>
+        </scene>
+    </scenes>
+</document>

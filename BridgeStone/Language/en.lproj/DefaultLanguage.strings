@@ -1,0 +1,186 @@
+/* 
+  DefaultLanguage.strings
+  BridgeStone
+
+  Created by somsak.kaeworasan on 19/4/2563 BE.
+  Copyright © 2563 Ifrasoft. All rights reserved.
+*/
+
+"login" = "Login";
+"username" = "     Username";
+"password" = "     Password";
+"forgot_password" = "Forgot password";
+"your_email" = "     Your Email";
+"confirm_email" = "Confirm email";
+
+"email_has_been_confirmed" = "
+The email has been confirmed. Please check the yours email";
+
+"favorite" = "Favorite";
+"all_fleet" = "All Fleet";
+
+"you_want_remove_from_fleet_favorite" = "You want remove from fleet favorite?";
+"cancel" = "Cancel";
+"confirm" = "Confirm";
+
+"add_new_fleet" = "Add New Fleet";
+"fleet_name" = "Fleet name";
+"address" = "Address";
+"district" = "District";
+"province" = "Province";
+"email" = "Email";
+
+"fleet_name_place" = "     Fleet name";
+"address_place" = "     Address";
+"district_place" = "     District";
+"province_place" = "     Province";
+"email_place" = "     Email";
+
+"specify_name" = "Specify name";
+"specify_address" = "Specify address";
+"specify_district" = "Specify district";
+"specify_province" = "Specify province";
+"specify_email" = "Specify Email";
+
+"register" = "Register";
+"search_tire" = "Search tires";
+"search_car" = "Search Car";
+"profile_setting" = "Setting";
+"manual" = "Instruction manual";
+"report" = "Report";
+"logout" = "Log out";
+
+"save" = "Save";
+
+"topic" = "yor want register?";
+"content" = "you car register car or register tire if want data more please connect administrative department";
+"register_car" = "Register Car";
+"register_tire" = "Register tires";
+
+"license_plate" = "License plate";
+"fill_up_license_plate" = "     Fill up license plate";
+"driver_name" = "Driver name";
+"fill_up_driver_name" = "     Fill up driver name";
+"phone_number" = "Phone number";
+"fill_up_phone_number" = "     Fill up phone number";
+"job_site_car" = "Job site";
+"fill_up_job_site" = "     Fill up job site";
+"car_frame" = "Car frame";
+"fill_up_car_frame" = "     Fill up car frame";
+"standard_maintenance" = "Standard maintenance";
+"fill_up_standard_maintenance" = "     Fill up standard maintenance";
+
+"specify_license_plate" = "specify license plate";
+"specify_driver_name" = "specify driver name";
+"specify_phone_number" = "specify phone number";
+"specify_job_site_car" = "specify job site";
+"specify_car_frame" = "specify car frame";
+"specify_standard_maintenance" = "specify standard maintenance";
+
+"register_car_next" = "Next car";
+
+"new_tires" = "New tires";
+"cast_tires" = "Cast tires";
+"number_tires" = "Number tires";
+"number_tire" = "     Specify number tires";
+"select_template_tires" = "Select template tires";
+"cast_tires_template" = "Cast tires template";
+"select_cast_tires_template" = "     Select cast tires template";
+"design_tire" = "     Select template tires";
+"job_site" = "     Fill up job site";
+"production_date_tires" = "Production date";
+"production_date" = "     Production week";
+"production_year" = "     Production year";
+"cast_template_tires" = "template tires";
+"select_template_tires_textField" = "     Select template tires";
+"select_cast_template_tires" = "     Select template tires";
+"number_template_tires" = "Number cast tires";
+"number_cast_tires" = "     Number cast tires";
+"detail_tires" = "Detail of tires : depth of tires 9 mm.";
+"register_tires_next" = "Next tires";
+
+"specify_number_tires" = "Specify tires number";
+"specify_template_tires" = "Specify tires template";
+"specify_production_date" = "Specify production week";
+"specify_production_year" = "Specify production year";
+"specify_cast_tires_template" = "Specify cast tires template";
+"specify_number_template_tires" = "Specify cast tires number";
+
+"search" = "Search...";
+
+"create_tires_template" = "Create tires template";
+"size" = "Size";
+"tires_size" = "     Tires size";
+"brands" = "Brands";
+"tires_brands" = "     Tires brands";
+"patterns" = "Tires patterns";
+"tires_patterns" = "     Tires patterns";
+
+"select_job_site" = "Select job site";
+"job_site_name" = "Job site name";
+"job_site_your_name" = "     Job site your name";
+
+"select_car_structure" = "Select car structure";
+"tractor" = "Tractor";
+"trailer" = "Trailer";
+"select_axles" = "Select axles";
+"select_wheel" = "Select wheel";
+
+"select_standard_maintenance" = "Select standard maintenance";
+
+"axles_standard_maintenance_name" = "Standard maintenance name";
+"axles_name" = "     Standard maintenance name";
+"standard_tire_depth" = "     Tire depth";
+"tire_depth" = "Tire depth";
+"standard_tire_pressure" = "     Tire pressure";
+"tire_pressure" = "Tire pressure";
+"warning_depth" = "     Warning depth";
+"critical_depth" = "     Critical depth";
+
+"all_result" = "result";
+"list" = "list";
+"total_vehicles" = "total vehicles";
+"vehicles" = "vehicles";
+"latest_update" = "Latest update";
+"license_plate" = "license plate";
+"active" = "Active";
+"not_active" = "Not active";
+"search_list" = "Search list";
+
+"register_success" = "Register success";
+"back_to_menu" = "Back to menu";
+
+"car_detail" = "Car detail";
+"name" = "Name";
+"phone" = "Phone";
+"mile" = "Mile";
+"job_sites" = "Job sites";
+"latest_check" = "Latest check";
+"car_status" = "Car status";
+"next" = "Next";
+
+"select_car_status" = "Select car status";
+
+"search_advance" = "Search advance";
+"depth_tires" = "Depth tires";
+"minimum" = "     Minimum";
+"maximum" = "     Maximum";
+"sorted_by_latest_update" = "     Sorted by latest update";
+"tires_status" = "     Tires status";
+
+"sort_by_latest_date" = "Sort by latest date";
+"sort_by_oldest_date" = "Sort by oldest date";
+"wait_retread" = "Wait retread";
+"in_stock" = "In stock";
+"waste_tires" = "Waste tires";
+"in_car" = "In car";
+
+"tractor_trailer" = "     Tractor/Trailer";
+"wheel_QTY" = "     Wheel quantity";
+"axles_QTY" = "     Axles quantity";
+
+"please_select_size" = "Please select size";
+"please_select_brand" = "Please select brand";
+"please_select_pattern" = "Please select pattern";
+"tire_template_duplicate" = "Tire template name is duplicate";
+

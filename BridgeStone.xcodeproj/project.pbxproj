@@ -1,0 +1,1579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E5F357E2436F5E50072B3C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F357D2436F5E50072B3C4 /* AppDelegate.swift */; };
+		2E5F35802436F5E50072B3C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F357F2436F5E50072B3C4 /* SceneDelegate.swift */; };
+		2E5F35822436F5E50072B3C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F35812436F5E50072B3C4 /* ViewController.swift */; };
+		2E5F35852436F5E50072B3C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F35832436F5E50072B3C4 /* Main.storyboard */; };
+		2E5F35882436F5E50072B3C4 /* BridgeStone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F35862436F5E50072B3C4 /* BridgeStone.xcdatamodeld */; };
+		2E5F358A2436F5E70072B3C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F35892436F5E70072B3C4 /* Assets.xcassets */; };
+		2E5F358D2436F5E70072B3C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F358B2436F5E70072B3C4 /* LaunchScreen.storyboard */; };
+		2E5F35982436F5E70072B3C4 /* BridgeStoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F35972436F5E70072B3C4 /* BridgeStoneTests.swift */; };
+		2E5F35A32436F5E70072B3C4 /* BridgeStoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F35A22436F5E70072B3C4 /* BridgeStoneUITests.swift */; };
+		2E84A8E4244C003D00E1563D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84A8E3244C003D00E1563D /* LoginViewModel.swift */; };
+		2E84A8E6244C01DC00E1563D /* LoginViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84A8E5244C01DC00E1563D /* LoginViewModelDelegate.swift */; };
+		2E84A8E9244C022A00E1563D /* ServiceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84A8E8244C022A00E1563D /* ServiceWrapper.swift */; };
+		2E84A8EB244C027000E1563D /* WebServiceURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84A8EA244C027000E1563D /* WebServiceURL.swift */; };
+		2E84A8ED244C064600E1563D /* ServiceWrapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84A8EC244C064600E1563D /* ServiceWrapperProtocol.swift */; };
+		2E84A8F0244C070E00E1563D /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84A8EF244C070E00E1563D /* Enum.swift */; };
+		2EAA6ECD244B0D4D0070C2A7 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA6ECC244B0D4D0070C2A7 /* Button.swift */; };
+		2EB96849244C9C6C003DE24E /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB96848244C9C6C003DE24E /* ForgotPasswordVC.swift */; };
+		2EC5C049244D3C570000F53E /* FleetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC5C048244D3C570000F53E /* FleetView.swift */; };
+		2EC5C04B244D3C950000F53E /* FleetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC5C04A244D3C940000F53E /* FleetCollectionViewCell.swift */; };
+		2EE854A2244CAA0D008247D4 /* DefaultLanguage.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EE854A4244CAA0D008247D4 /* DefaultLanguage.strings */; };
+		2EE854A7244CAC4B008247D4 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE854A6244CAC4B008247D4 /* LanguageManager.swift */; };
+		2EE854A9244CB736008247D4 /* CoreDataManagerProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE854A8244CB736008247D4 /* CoreDataManagerProtocal.swift */; };
+		2EE9E888244C2C8600A4CCD9 /* ForgotPasswordScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EE9E887244C2C8600A4CCD9 /* ForgotPasswordScreen.storyboard */; };
+		2EE9E88A244C359A00A4CCD9 /* MenuScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EE9E889244C359A00A4CCD9 /* MenuScreen.storyboard */; };
+		2EE9E88C244C386300A4CCD9 /* FleetScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EE9E88B244C386300A4CCD9 /* FleetScreen.storyboard */; };
+		2EE9E88F244C41AB00A4CCD9 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9E88E244C41AB00A4CCD9 /* UserManager.swift */; };
+		2EE9E891244C41D600A4CCD9 /* UserManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9E890244C41D600A4CCD9 /* UserManagerProtocol.swift */; };
+		2EE9E893244C423100A4CCD9 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9E892244C423100A4CCD9 /* CoreDataManager.swift */; };
+		2EE9E896244C447600A4CCD9 /* FleetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9E895244C447600A4CCD9 /* FleetVC.swift */; };
+		3FD0C092CB0792B4166F837A /* Pods_BridgeStone_BridgeStoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1915D41A547CD4CBE61DDB /* Pods_BridgeStone_BridgeStoneUITests.framework */; };
+		AAF1EB06588A29969511FAF2 /* Pods_BridgeStoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FA79B5234FC2B1A654DB9B /* Pods_BridgeStoneTests.framework */; };
+		EAD25E16AEBE1933B5860840 /* Pods_BridgeStone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20539E463F051068BD99F0B /* Pods_BridgeStone.framework */; };
+		FE0A1BF724877A6F005FC9EA /* DialogCarStatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A1BF624877A6F005FC9EA /* DialogCarStatusVC.swift */; };
+		FE0B5EE324872CCA0091C94F /* CarDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0B5EE224872CCA0091C94F /* CarDetailVC.swift */; };
+		FE0C526424752E280055731A /* DialogAddJobSiteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C526324752E280055731A /* DialogAddJobSiteVC.swift */; };
+		FE0C5268247530060055731A /* DialogAddJobSiteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C5267247530060055731A /* DialogAddJobSiteModel.swift */; };
+		FE0C526A2475301C0055731A /* DialogAddJobSiteModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C52692475301C0055731A /* DialogAddJobSiteModelDelegate.swift */; };
+		FE0C526D2475403B0055731A /* RegisterTireTemplateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C526C2475403B0055731A /* RegisterTireTemplateVC.swift */; };
+		FE0CBA4224761DBA0045B9D4 /* SizeTire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0CBA4124761DBA0045B9D4 /* SizeTire.swift */; };
+		FE0CBA44247622170045B9D4 /* RegisterTireTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0CBA43247622170045B9D4 /* RegisterTireTemplateView.swift */; };
+		FE0CBA46247629C60045B9D4 /* RegisterTireTemplateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0CBA45247629C60045B9D4 /* RegisterTireTemplateModel.swift */; };
+		FE0CBA4824762ADB0045B9D4 /* RegisterTireTemplateModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0CBA4724762ADB0045B9D4 /* RegisterTireTemplateModelDelegate.swift */; };
+		FE0CBBF32455ECD3001713C1 /* AddNewFleetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0CBBF22455ECD3001713C1 /* AddNewFleetVC.swift */; };
+		FE146C35247B76810060B026 /* SearchTireAdvanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE146C34247B76810060B026 /* SearchTireAdvanceVC.swift */; };
+		FE146C38247B7A0B0060B026 /* SearchCarAdvanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE146C37247B7A0B0060B026 /* SearchCarAdvanceVC.swift */; };
+		FE162FF9245955F500D42672 /* FavoriteFleetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE162FF8245955F500D42672 /* FavoriteFleetTableViewCell.swift */; };
+		FE162FFB2459560400D42672 /* FavoriteFleetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE162FFA2459560400D42672 /* FavoriteFleetModel.swift */; };
+		FE162FFD2459561D00D42672 /* FavoriteFleetModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE162FFC2459561D00D42672 /* FavoriteFleetModelDelegate.swift */; };
+		FE162FFF245956FA00D42672 /* FavoriteFleets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE162FFE245956FA00D42672 /* FavoriteFleets.swift */; };
+		FE1630022459765000D42672 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1630012459765000D42672 /* MenuVC.swift */; };
+		FE1630042459766D00D42672 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1630032459766D00D42672 /* MenuView.swift */; };
+		FE1630062459768400D42672 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1630052459768400D42672 /* MenuModel.swift */; };
+		FE1630082459769C00D42672 /* MenuModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1630072459769C00D42672 /* MenuModelDelegate.swift */; };
+		FE16300A2459819C00D42672 /* ChooseRegisterScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1630092459819C00D42672 /* ChooseRegisterScreen.storyboard */; };
+		FE16300D245981DE00D42672 /* ChooseRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16300C245981DE00D42672 /* ChooseRegisterVC.swift */; };
+		FE16300F245981F500D42672 /* ChooseRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16300E245981F500D42672 /* ChooseRegisterView.swift */; };
+		FE1630112459821500D42672 /* ChooseRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1630102459821500D42672 /* ChooseRegisterModel.swift */; };
+		FE1630132459823400D42672 /* ChooseRegisterModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1630122459823400D42672 /* ChooseRegisterModelDelegate.swift */; };
+		FE1630172459837D00D42672 /* Sofia-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE1630162459837D00D42672 /* Sofia-Regular.ttf */; };
+		FE181FBB2477BDE400A23645 /* AddTireDepthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE181FBA2477BDE400A23645 /* AddTireDepthVC.swift */; };
+		FE181FBD2477D34F00A23645 /* AddTirePressureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE181FBC2477D34F00A23645 /* AddTirePressureVC.swift */; };
+		FE224FC22472CB620023E121 /* DesignTireAfterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE224FC12472CB620023E121 /* DesignTireAfterVC.swift */; };
+		FE224FC42472CB8D0023E121 /* DesignTireAfterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE224FC32472CB8D0023E121 /* DesignTireAfterTableViewCell.swift */; };
+		FE224FC62472CBC60023E121 /* DesignTireAfterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE224FC52472CBC60023E121 /* DesignTireAfterModel.swift */; };
+		FE224FC82472CBE20023E121 /* DesignTireAfterModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE224FC72472CBE20023E121 /* DesignTireAfterModelDelegate.swift */; };
+		FE2E59FE245DBF04004A79BE /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE2E59FD245DBF04004A79BE /* Poppins-Regular.ttf */; };
+		FE2E5A00245DBFB1004A79BE /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE2E59FF245DBFB1004A79BE /* Poppins-SemiBold.ttf */; };
+		FE321B8A245BC731000DF92B /* ProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE321B89245BC731000DF92B /* ProfileScreen.storyboard */; };
+		FE321B8D245BCB8A000DF92B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE321B8C245BCB8A000DF92B /* ProfileVC.swift */; };
+		FE321B8F245BD0C5000DF92B /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE321B8E245BD0C5000DF92B /* ProfileTableViewCell.swift */; };
+		FE321B91245BD0E0000DF92B /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE321B90245BD0E0000DF92B /* ProfileModel.swift */; };
+		FE321B93245BD0FA000DF92B /* ProfileModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE321B92245BD0FA000DF92B /* ProfileModelDelegate.swift */; };
+		FE3340D2247441D8008E3D22 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3340D1247441D8008E3D22 /* Car.swift */; };
+		FE3A5728245676B30097E5C9 /* AddNewFleetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3A5727245676B30097E5C9 /* AddNewFleetTableViewCell.swift */; };
+		FE3A572A24567B710097E5C9 /* AddNewFleetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3A572924567B710097E5C9 /* AddNewFleetModel.swift */; };
+		FE3A572C24567B8C0097E5C9 /* AddNewFleetDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3A572B24567B8C0097E5C9 /* AddNewFleetDelegate.swift */; };
+		FE4BEC652470513E00577338 /* Jobsites.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4BEC642470513E00577338 /* Jobsites.swift */; };
+		FE4BF29C246A969A00EFA8B7 /* RegisterTire.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4BF29B246A969A00EFA8B7 /* RegisterTire.storyboard */; };
+		FE4BF29F246A982B00EFA8B7 /* RegisterTireTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4BF29E246A982B00EFA8B7 /* RegisterTireTableViewCell.swift */; };
+		FE4BF2A1246A984200EFA8B7 /* RegisterTireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4BF2A0246A984200EFA8B7 /* RegisterTireVC.swift */; };
+		FE4EA9D9248268EF00AB12F5 /* DialogOrderbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EA9D8248268EF00AB12F5 /* DialogOrderbyVC.swift */; };
+		FE5650AD247115F5003BDF5F /* RegisterCar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5650AC247115F5003BDF5F /* RegisterCar.storyboard */; };
+		FE5650B024712C1E003BDF5F /* RegisterCarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5650AF24712C1E003BDF5F /* RegisterCarVC.swift */; };
+		FE5650B224712D81003BDF5F /* RegisterCarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5650B124712D81003BDF5F /* RegisterCarTableViewCell.swift */; };
+		FE5650B4247134E1003BDF5F /* RegisterCarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5650B3247134E1003BDF5F /* RegisterCarModel.swift */; };
+		FE5650B6247134F3003BDF5F /* RegisterCarModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5650B5247134F3003BDF5F /* RegisterCarModelDelegate.swift */; };
+		FE5650B924713F15003BDF5F /* CarStructureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5650B824713F15003BDF5F /* CarStructureVC.swift */; };
+		FE5650BB2471403F003BDF5F /* CarStructureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5650BA2471403F003BDF5F /* CarStructureTableViewCell.swift */; };
+		FE5650BD24714093003BDF5F /* CarStructureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5650BC24714093003BDF5F /* CarStructureModel.swift */; };
+		FE5650BF247140A4003BDF5F /* CarStructureModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5650BE247140A4003BDF5F /* CarStructureModelDelegate.swift */; };
+		FE5650C12471413B003BDF5F /* CarStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5650C02471413B003BDF5F /* CarStructure.swift */; };
+		FE566B49246D38000009C82D /* SelectDesignTireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE566B48246D38000009C82D /* SelectDesignTireVC.swift */; };
+		FE566B4B246D3AA80009C82D /* SelectDesignTireTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE566B4A246D3AA80009C82D /* SelectDesignTireTableViewCell.swift */; };
+		FE566B4D246D3C3A0009C82D /* SelectDesignTireModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE566B4C246D3C3A0009C82D /* SelectDesignTireModel.swift */; };
+		FE566B4F246D3C540009C82D /* SelectDesignTireModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE566B4E246D3C540009C82D /* SelectDesignTireModelDelegate.swift */; };
+		FE566B51246D43690009C82D /* TireTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE566B50246D43690009C82D /* TireTemplates.swift */; };
+		FE59C7EA247241DD00564BAA /* StandardMaintenanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59C7E9247241DD00564BAA /* StandardMaintenanceVC.swift */; };
+		FE59C7EC247246B800564BAA /* Policies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59C7EB247246B800564BAA /* Policies.swift */; };
+		FE59C7EE247251D100564BAA /* StandardMaintenanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59C7ED247251D000564BAA /* StandardMaintenanceTableViewCell.swift */; };
+		FE59C7F0247251E600564BAA /* StandardMaintenanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59C7EF247251E600564BAA /* StandardMaintenanceModel.swift */; };
+		FE59C7F2247251F600564BAA /* StandardMaintenanceModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59C7F1247251F600564BAA /* StandardMaintenanceModelDelegate.swift */; };
+		FE600C402473B40E0054DB6F /* DialogCarDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE600C3F2473B40E0054DB6F /* DialogCarDetailVC.swift */; };
+		FE600C422473B4240054DB6F /* DialogCarDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE600C412473B4240054DB6F /* DialogCarDetailTableViewCell.swift */; };
+		FE600C442473B4370054DB6F /* DialogCarDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE600C432473B4370054DB6F /* DialogCarDetailModel.swift */; };
+		FE600C462473B4430054DB6F /* DialogCarDetailModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE600C452473B4430054DB6F /* DialogCarDetailModelDelegate.swift */; };
+		FE600C482473D2600054DB6F /* SearchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE600C472473D2600054DB6F /* SearchScreen.storyboard */; };
+		FE600C4B2473D6210054DB6F /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE600C4A2473D6210054DB6F /* SearchVC.swift */; };
+		FE600C4D2473D6490054DB6F /* SearchScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE600C4C2473D6490054DB6F /* SearchScreenTableViewCell.swift */; };
+		FE600C4F2473D6860054DB6F /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE600C4E2473D6860054DB6F /* SearchModel.swift */; };
+		FE600C512473D6B00054DB6F /* SearchModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE600C502473D6B00054DB6F /* SearchModelDelegate.swift */; };
+		FE600C532473E51C0054DB6F /* Tire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE600C522473E51C0054DB6F /* Tire.swift */; };
+		FE679AF92462C0F10052490C /* DialogDeleteFleetFavorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE679AF82462C0F10052490C /* DialogDeleteFleetFavorite.storyboard */; };
+		FE679AFC2462C4B50052490C /* DialogDeleteFleetFavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE679AFB2462C4B50052490C /* DialogDeleteFleetFavoriteVC.swift */; };
+		FE6ED98E244EC8F600355BCB /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE6ED98D244EC8F600355BCB /* Roboto-Regular.ttf */; };
+		FE6ED990244EC9B500355BCB /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE6ED98F244EC9B500355BCB /* Roboto-Bold.ttf */; };
+		FE6ED993244EC9D400355BCB /* Gibson-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE6ED991244EC9D400355BCB /* Gibson-Regular.ttf */; };
+		FE6ED994244EC9D400355BCB /* Gibson-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE6ED992244EC9D400355BCB /* Gibson-Bold.ttf */; };
+		FE6ED996244ED6EB00355BCB /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6ED995244ED6EB00355BCB /* View.swift */; };
+		FE6ED999244ED87E00355BCB /* AllFleetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6ED998244ED87E00355BCB /* AllFleetVC.swift */; };
+		FE6ED99B244ED8AD00355BCB /* AllFleetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6ED99A244ED8AD00355BCB /* AllFleetTableViewCell.swift */; };
+		FE6ED99D244ED8CC00355BCB /* AllFleetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6ED99C244ED8CC00355BCB /* AllFleetModel.swift */; };
+		FE6ED99F244ED8F600355BCB /* AllFleetModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6ED99E244ED8F600355BCB /* AllFleetModelDelegate.swift */; };
+		FE6ED9A2244F00E700355BCB /* Fleet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6ED9A1244F00E700355BCB /* Fleet.swift */; };
+		FE706C8224519F2C001E10E5 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE706C8124519F2C001E10E5 /* ForgotPasswordView.swift */; };
+		FE706C8424519F4F001E10E5 /* ForgotPasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE706C8324519F4F001E10E5 /* ForgotPasswordModel.swift */; };
+		FE706C8624519F73001E10E5 /* ForgotPasswordModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE706C8524519F73001E10E5 /* ForgotPasswordModelDelegate.swift */; };
+		FE7F697A247225DA00F05ACE /* RegisterTireSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7F6979247225DA00F05ACE /* RegisterTireSuccessVC.swift */; };
+		FE8A78202494A9DA00E1CA2A /* ManagesTiresScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE8A781F2494A9DA00E1CA2A /* ManagesTiresScreen.storyboard */; };
+		FE9BE9BB24769BFD00F01015 /* CreateStandardMaintenanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9BE9BA24769BFD00F01015 /* CreateStandardMaintenanceVC.swift */; };
+		FE9BE9BD24769C1700F01015 /* CreateStandardMaintenanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9BE9BC24769C1700F01015 /* CreateStandardMaintenanceTableViewCell.swift */; };
+		FE9BE9BF24769C4100F01015 /* CreateStandardMaintenanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9BE9BE24769C4100F01015 /* CreateStandardMaintenanceModel.swift */; };
+		FE9BE9C124769C5B00F01015 /* CreateStandardMaintenanceModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9BE9C024769C5B00F01015 /* CreateStandardMaintenanceModelDelegate.swift */; };
+		FEA3ED9B246FB88500EB954A /* JobSiteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA3ED9A246FB88500EB954A /* JobSiteVC.swift */; };
+		FEA3ED9D246FB8A500EB954A /* JobSiteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA3ED9C246FB8A500EB954A /* JobSiteTableViewCell.swift */; };
+		FEA3ED9F246FB8C300EB954A /* JobSiteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA3ED9E246FB8C300EB954A /* JobSiteModel.swift */; };
+		FEA3EDA1246FB8D600EB954A /* JobSiteModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA3EDA0246FB8D600EB954A /* JobSiteModelDelegate.swift */; };
+		FEA7A02E2450460E00C88531 /* FavoriteFleetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7A02D2450460E00C88531 /* FavoriteFleetVC.swift */; };
+		FED1A28E246BCD0300BC8E8E /* RegisterTireModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED1A28D246BCD0300BC8E8E /* RegisterTireModel.swift */; };
+		FED1A290246BCD2600BC8E8E /* RegisterTireModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED1A28F246BCD2600BC8E8E /* RegisterTireModelDelegate.swift */; };
+		FEF5F87E24650BBC00F638CE /* logo360.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEF5F87C24650BBB00F638CE /* logo360.jpg */; };
+		FEF5F87F24650BBC00F638CE /* logo120.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEF5F87D24650BBC00F638CE /* logo120.jpg */; };
+		FEF87AF6245FB3160008939E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF87AF5245FB3160008939E /* Profile.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E5F35942436F5E70072B3C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E5F35722436F5E50072B3C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E5F35792436F5E50072B3C4;
+			remoteInfo = BridgeStone;
+		};
+		2E5F359F2436F5E70072B3C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E5F35722436F5E50072B3C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E5F35792436F5E50072B3C4;
+			remoteInfo = BridgeStone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E5F357A2436F5E50072B3C4 /* Toolbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toolbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E5F357D2436F5E50072B3C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E5F357F2436F5E50072B3C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2E5F35812436F5E50072B3C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E5F35872436F5E50072B3C4 /* BridgeStone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BridgeStone.xcdatamodel; sourceTree = "<group>"; };
+		2E5F35892436F5E70072B3C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E5F358E2436F5E70072B3C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E5F35932436F5E70072B3C4 /* BridgeStoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeStoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E5F35972436F5E70072B3C4 /* BridgeStoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeStoneTests.swift; sourceTree = "<group>"; };
+		2E5F35992436F5E70072B3C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E5F359E2436F5E70072B3C4 /* BridgeStoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeStoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E5F35A22436F5E70072B3C4 /* BridgeStoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeStoneUITests.swift; sourceTree = "<group>"; };
+		2E5F35A42436F5E70072B3C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E84A8E3244C003D00E1563D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		2E84A8E5244C01DC00E1563D /* LoginViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelDelegate.swift; sourceTree = "<group>"; };
+		2E84A8E8244C022A00E1563D /* ServiceWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceWrapper.swift; sourceTree = "<group>"; };
+		2E84A8EA244C027000E1563D /* WebServiceURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceURL.swift; sourceTree = "<group>"; };
+		2E84A8EC244C064600E1563D /* ServiceWrapperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceWrapperProtocol.swift; sourceTree = "<group>"; };
+		2E84A8EF244C070E00E1563D /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		2EAA6ECC244B0D4D0070C2A7 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		2EB96848244C9C6C003DE24E /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		2EC5C048244D3C570000F53E /* FleetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetView.swift; sourceTree = "<group>"; };
+		2EC5C04A244D3C940000F53E /* FleetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetCollectionViewCell.swift; sourceTree = "<group>"; };
+		2EE8549A244CA91B008247D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EE8549B244CA91B008247D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EE8549D244CA936008247D4 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2EE854A3244CAA0D008247D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DefaultLanguage.strings; sourceTree = "<group>"; };
+		2EE854A5244CAA57008247D4 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/DefaultLanguage.strings; sourceTree = "<group>"; };
+		2EE854A6244CAC4B008247D4 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		2EE854A8244CB736008247D4 /* CoreDataManagerProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerProtocal.swift; sourceTree = "<group>"; };
+		2EE9E887244C2C8600A4CCD9 /* ForgotPasswordScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPasswordScreen.storyboard; sourceTree = "<group>"; };
+		2EE9E889244C359A00A4CCD9 /* MenuScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuScreen.storyboard; sourceTree = "<group>"; };
+		2EE9E88B244C386300A4CCD9 /* FleetScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FleetScreen.storyboard; sourceTree = "<group>"; };
+		2EE9E88E244C41AB00A4CCD9 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		2EE9E890244C41D600A4CCD9 /* UserManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagerProtocol.swift; sourceTree = "<group>"; };
+		2EE9E892244C423100A4CCD9 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		2EE9E895244C447600A4CCD9 /* FleetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetVC.swift; sourceTree = "<group>"; };
+		58FA79B5234FC2B1A654DB9B /* Pods_BridgeStoneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BridgeStoneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C6B4E45BB255567EE89D6F5 /* Pods-BridgeStone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgeStone.debug.xcconfig"; path = "Target Support Files/Pods-BridgeStone/Pods-BridgeStone.debug.xcconfig"; sourceTree = "<group>"; };
+		716B2CE2C50D9E6C1CF3407E /* Pods-BridgeStone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgeStone.release.xcconfig"; path = "Target Support Files/Pods-BridgeStone/Pods-BridgeStone.release.xcconfig"; sourceTree = "<group>"; };
+		9A1915D41A547CD4CBE61DDB /* Pods_BridgeStone_BridgeStoneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BridgeStone_BridgeStoneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A704FC13B299DC424FA077E2 /* Pods-BridgeStone-BridgeStoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgeStone-BridgeStoneUITests.release.xcconfig"; path = "Target Support Files/Pods-BridgeStone-BridgeStoneUITests/Pods-BridgeStone-BridgeStoneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B5BF8BB3ECB8F12F06CCFFBA /* Pods-BridgeStone-BridgeStoneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgeStone-BridgeStoneUITests.debug.xcconfig"; path = "Target Support Files/Pods-BridgeStone-BridgeStoneUITests/Pods-BridgeStone-BridgeStoneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCC4F7578726AE5C0E5DC1C6 /* Pods-BridgeStoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgeStoneTests.release.xcconfig"; path = "Target Support Files/Pods-BridgeStoneTests/Pods-BridgeStoneTests.release.xcconfig"; sourceTree = "<group>"; };
+		D20539E463F051068BD99F0B /* Pods_BridgeStone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BridgeStone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3F51365A1BA4547FAEA7999 /* Pods-BridgeStoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgeStoneTests.debug.xcconfig"; path = "Target Support Files/Pods-BridgeStoneTests/Pods-BridgeStoneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE0A1BF624877A6F005FC9EA /* DialogCarStatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCarStatusVC.swift; sourceTree = "<group>"; };
+		FE0B5EE224872CCA0091C94F /* CarDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailVC.swift; sourceTree = "<group>"; };
+		FE0C526324752E280055731A /* DialogAddJobSiteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogAddJobSiteVC.swift; sourceTree = "<group>"; };
+		FE0C5267247530060055731A /* DialogAddJobSiteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogAddJobSiteModel.swift; sourceTree = "<group>"; };
+		FE0C52692475301C0055731A /* DialogAddJobSiteModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogAddJobSiteModelDelegate.swift; sourceTree = "<group>"; };
+		FE0C526C2475403B0055731A /* RegisterTireTemplateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTireTemplateVC.swift; sourceTree = "<group>"; };
+		FE0CBA4124761DBA0045B9D4 /* SizeTire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeTire.swift; sourceTree = "<group>"; };
+		FE0CBA43247622170045B9D4 /* RegisterTireTemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTireTemplateView.swift; sourceTree = "<group>"; };
+		FE0CBA45247629C60045B9D4 /* RegisterTireTemplateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTireTemplateModel.swift; sourceTree = "<group>"; };
+		FE0CBA4724762ADB0045B9D4 /* RegisterTireTemplateModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTireTemplateModelDelegate.swift; sourceTree = "<group>"; };
+		FE0CBBF22455ECD3001713C1 /* AddNewFleetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewFleetVC.swift; sourceTree = "<group>"; };
+		FE146C34247B76810060B026 /* SearchTireAdvanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTireAdvanceVC.swift; sourceTree = "<group>"; };
+		FE146C37247B7A0B0060B026 /* SearchCarAdvanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCarAdvanceVC.swift; sourceTree = "<group>"; };
+		FE162FF8245955F500D42672 /* FavoriteFleetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFleetTableViewCell.swift; sourceTree = "<group>"; };
+		FE162FFA2459560400D42672 /* FavoriteFleetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFleetModel.swift; sourceTree = "<group>"; };
+		FE162FFC2459561D00D42672 /* FavoriteFleetModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFleetModelDelegate.swift; sourceTree = "<group>"; };
+		FE162FFE245956FA00D42672 /* FavoriteFleets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFleets.swift; sourceTree = "<group>"; };
+		FE1630012459765000D42672 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		FE1630032459766D00D42672 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		FE1630052459768400D42672 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		FE1630072459769C00D42672 /* MenuModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModelDelegate.swift; sourceTree = "<group>"; };
+		FE1630092459819C00D42672 /* ChooseRegisterScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseRegisterScreen.storyboard; sourceTree = "<group>"; };
+		FE16300C245981DE00D42672 /* ChooseRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseRegisterVC.swift; sourceTree = "<group>"; };
+		FE16300E245981F500D42672 /* ChooseRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseRegisterView.swift; sourceTree = "<group>"; };
+		FE1630102459821500D42672 /* ChooseRegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseRegisterModel.swift; sourceTree = "<group>"; };
+		FE1630122459823400D42672 /* ChooseRegisterModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseRegisterModelDelegate.swift; sourceTree = "<group>"; };
+		FE1630162459837D00D42672 /* Sofia-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia-Regular.ttf"; sourceTree = "<group>"; };
+		FE181FBA2477BDE400A23645 /* AddTireDepthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTireDepthVC.swift; sourceTree = "<group>"; };
+		FE181FBC2477D34F00A23645 /* AddTirePressureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTirePressureVC.swift; sourceTree = "<group>"; };
+		FE224FC12472CB620023E121 /* DesignTireAfterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTireAfterVC.swift; sourceTree = "<group>"; };
+		FE224FC32472CB8D0023E121 /* DesignTireAfterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTireAfterTableViewCell.swift; sourceTree = "<group>"; };
+		FE224FC52472CBC60023E121 /* DesignTireAfterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTireAfterModel.swift; sourceTree = "<group>"; };
+		FE224FC72472CBE20023E121 /* DesignTireAfterModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTireAfterModelDelegate.swift; sourceTree = "<group>"; };
+		FE2E59FD245DBF04004A79BE /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		FE2E59FF245DBFB1004A79BE /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		FE321B89245BC731000DF92B /* ProfileScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileScreen.storyboard; sourceTree = "<group>"; };
+		FE321B8C245BCB8A000DF92B /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		FE321B8E245BD0C5000DF92B /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		FE321B90245BD0E0000DF92B /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		FE321B92245BD0FA000DF92B /* ProfileModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModelDelegate.swift; sourceTree = "<group>"; };
+		FE3340D1247441D8008E3D22 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		FE3A5727245676B30097E5C9 /* AddNewFleetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewFleetTableViewCell.swift; sourceTree = "<group>"; };
+		FE3A572924567B710097E5C9 /* AddNewFleetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewFleetModel.swift; sourceTree = "<group>"; };
+		FE3A572B24567B8C0097E5C9 /* AddNewFleetDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewFleetDelegate.swift; sourceTree = "<group>"; };
+		FE4BEC642470513E00577338 /* Jobsites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jobsites.swift; sourceTree = "<group>"; };
+		FE4BF29B246A969A00EFA8B7 /* RegisterTire.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterTire.storyboard; sourceTree = "<group>"; };
+		FE4BF29E246A982B00EFA8B7 /* RegisterTireTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTireTableViewCell.swift; sourceTree = "<group>"; };
+		FE4BF2A0246A984200EFA8B7 /* RegisterTireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTireVC.swift; sourceTree = "<group>"; };
+		FE4EA9D8248268EF00AB12F5 /* DialogOrderbyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogOrderbyVC.swift; sourceTree = "<group>"; };
+		FE5650AC247115F5003BDF5F /* RegisterCar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterCar.storyboard; sourceTree = "<group>"; };
+		FE5650AF24712C1E003BDF5F /* RegisterCarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCarVC.swift; sourceTree = "<group>"; };
+		FE5650B124712D81003BDF5F /* RegisterCarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCarTableViewCell.swift; sourceTree = "<group>"; };
+		FE5650B3247134E1003BDF5F /* RegisterCarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCarModel.swift; sourceTree = "<group>"; };
+		FE5650B5247134F3003BDF5F /* RegisterCarModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCarModelDelegate.swift; sourceTree = "<group>"; };
+		FE5650B824713F15003BDF5F /* CarStructureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarStructureVC.swift; sourceTree = "<group>"; };
+		FE5650BA2471403F003BDF5F /* CarStructureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarStructureTableViewCell.swift; sourceTree = "<group>"; };
+		FE5650BC24714093003BDF5F /* CarStructureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarStructureModel.swift; sourceTree = "<group>"; };
+		FE5650BE247140A4003BDF5F /* CarStructureModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarStructureModelDelegate.swift; sourceTree = "<group>"; };
+		FE5650C02471413B003BDF5F /* CarStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarStructure.swift; sourceTree = "<group>"; };
+		FE566B48246D38000009C82D /* SelectDesignTireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDesignTireVC.swift; sourceTree = "<group>"; };
+		FE566B4A246D3AA80009C82D /* SelectDesignTireTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDesignTireTableViewCell.swift; sourceTree = "<group>"; };
+		FE566B4C246D3C3A0009C82D /* SelectDesignTireModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDesignTireModel.swift; sourceTree = "<group>"; };
+		FE566B4E246D3C540009C82D /* SelectDesignTireModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDesignTireModelDelegate.swift; sourceTree = "<group>"; };
+		FE566B50246D43690009C82D /* TireTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TireTemplates.swift; sourceTree = "<group>"; };
+		FE59C7E9247241DD00564BAA /* StandardMaintenanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardMaintenanceVC.swift; sourceTree = "<group>"; };
+		FE59C7EB247246B800564BAA /* Policies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Policies.swift; sourceTree = "<group>"; };
+		FE59C7ED247251D000564BAA /* StandardMaintenanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardMaintenanceTableViewCell.swift; sourceTree = "<group>"; };
+		FE59C7EF247251E600564BAA /* StandardMaintenanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardMaintenanceModel.swift; sourceTree = "<group>"; };
+		FE59C7F1247251F600564BAA /* StandardMaintenanceModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardMaintenanceModelDelegate.swift; sourceTree = "<group>"; };
+		FE600C3F2473B40E0054DB6F /* DialogCarDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCarDetailVC.swift; sourceTree = "<group>"; };
+		FE600C412473B4240054DB6F /* DialogCarDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCarDetailTableViewCell.swift; sourceTree = "<group>"; };
+		FE600C432473B4370054DB6F /* DialogCarDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCarDetailModel.swift; sourceTree = "<group>"; };
+		FE600C452473B4430054DB6F /* DialogCarDetailModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCarDetailModelDelegate.swift; sourceTree = "<group>"; };
+		FE600C472473D2600054DB6F /* SearchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchScreen.storyboard; sourceTree = "<group>"; };
+		FE600C4A2473D6210054DB6F /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		FE600C4C2473D6490054DB6F /* SearchScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenTableViewCell.swift; sourceTree = "<group>"; };
+		FE600C4E2473D6860054DB6F /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		FE600C502473D6B00054DB6F /* SearchModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModelDelegate.swift; sourceTree = "<group>"; };
+		FE600C522473E51C0054DB6F /* Tire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tire.swift; sourceTree = "<group>"; };
+		FE679AF82462C0F10052490C /* DialogDeleteFleetFavorite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DialogDeleteFleetFavorite.storyboard; sourceTree = "<group>"; };
+		FE679AFB2462C4B50052490C /* DialogDeleteFleetFavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogDeleteFleetFavoriteVC.swift; sourceTree = "<group>"; };
+		FE6ED98D244EC8F600355BCB /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		FE6ED98F244EC9B500355BCB /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		FE6ED991244EC9D400355BCB /* Gibson-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gibson-Regular.ttf"; sourceTree = "<group>"; };
+		FE6ED992244EC9D400355BCB /* Gibson-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gibson-Bold.ttf"; sourceTree = "<group>"; };
+		FE6ED995244ED6EB00355BCB /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		FE6ED998244ED87E00355BCB /* AllFleetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFleetVC.swift; sourceTree = "<group>"; };
+		FE6ED99A244ED8AD00355BCB /* AllFleetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFleetTableViewCell.swift; sourceTree = "<group>"; };
+		FE6ED99C244ED8CC00355BCB /* AllFleetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFleetModel.swift; sourceTree = "<group>"; };
+		FE6ED99E244ED8F600355BCB /* AllFleetModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFleetModelDelegate.swift; sourceTree = "<group>"; };
+		FE6ED9A1244F00E700355BCB /* Fleet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fleet.swift; sourceTree = "<group>"; };
+		FE706C8124519F2C001E10E5 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		FE706C8324519F4F001E10E5 /* ForgotPasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordModel.swift; sourceTree = "<group>"; };
+		FE706C8524519F73001E10E5 /* ForgotPasswordModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordModelDelegate.swift; sourceTree = "<group>"; };
+		FE7F6979247225DA00F05ACE /* RegisterTireSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTireSuccessVC.swift; sourceTree = "<group>"; };
+		FE8A781F2494A9DA00E1CA2A /* ManagesTiresScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManagesTiresScreen.storyboard; sourceTree = "<group>"; };
+		FE9BE9BA24769BFD00F01015 /* CreateStandardMaintenanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStandardMaintenanceVC.swift; sourceTree = "<group>"; };
+		FE9BE9BC24769C1700F01015 /* CreateStandardMaintenanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStandardMaintenanceTableViewCell.swift; sourceTree = "<group>"; };
+		FE9BE9BE24769C4100F01015 /* CreateStandardMaintenanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStandardMaintenanceModel.swift; sourceTree = "<group>"; };
+		FE9BE9C024769C5B00F01015 /* CreateStandardMaintenanceModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStandardMaintenanceModelDelegate.swift; sourceTree = "<group>"; };
+		FEA3ED9A246FB88500EB954A /* JobSiteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSiteVC.swift; sourceTree = "<group>"; };
+		FEA3ED9C246FB8A500EB954A /* JobSiteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSiteTableViewCell.swift; sourceTree = "<group>"; };
+		FEA3ED9E246FB8C300EB954A /* JobSiteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSiteModel.swift; sourceTree = "<group>"; };
+		FEA3EDA0246FB8D600EB954A /* JobSiteModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSiteModelDelegate.swift; sourceTree = "<group>"; };
+		FEA7A02D2450460E00C88531 /* FavoriteFleetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFleetVC.swift; sourceTree = "<group>"; };
+		FED1A28D246BCD0300BC8E8E /* RegisterTireModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTireModel.swift; sourceTree = "<group>"; };
+		FED1A28F246BCD2600BC8E8E /* RegisterTireModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTireModelDelegate.swift; sourceTree = "<group>"; };
+		FEF5F87C24650BBB00F638CE /* logo360.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo360.jpg; sourceTree = "<group>"; };
+		FEF5F87D24650BBC00F638CE /* logo120.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo120.jpg; sourceTree = "<group>"; };
+		FEF87AF5245FB3160008939E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E5F35772436F5E50072B3C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD25E16AEBE1933B5860840 /* Pods_BridgeStone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E5F35902436F5E70072B3C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF1EB06588A29969511FAF2 /* Pods_BridgeStoneTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E5F359B2436F5E70072B3C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD0C092CB0792B4166F837A /* Pods_BridgeStone_BridgeStoneUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2449407B2D8E6E79B542DE61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C6B4E45BB255567EE89D6F5 /* Pods-BridgeStone.debug.xcconfig */,
+				716B2CE2C50D9E6C1CF3407E /* Pods-BridgeStone.release.xcconfig */,
+				B5BF8BB3ECB8F12F06CCFFBA /* Pods-BridgeStone-BridgeStoneUITests.debug.xcconfig */,
+				A704FC13B299DC424FA077E2 /* Pods-BridgeStone-BridgeStoneUITests.release.xcconfig */,
+				E3F51365A1BA4547FAEA7999 /* Pods-BridgeStoneTests.debug.xcconfig */,
+				CCC4F7578726AE5C0E5DC1C6 /* Pods-BridgeStoneTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2E22CA0624372512005B0D13 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2EE9E887244C2C8600A4CCD9 /* ForgotPasswordScreen.storyboard */,
+				2EE9E88B244C386300A4CCD9 /* FleetScreen.storyboard */,
+				2EE9E889244C359A00A4CCD9 /* MenuScreen.storyboard */,
+				FE1630092459819C00D42672 /* ChooseRegisterScreen.storyboard */,
+				FE321B89245BC731000DF92B /* ProfileScreen.storyboard */,
+				FE679AF82462C0F10052490C /* DialogDeleteFleetFavorite.storyboard */,
+				FE4BF29B246A969A00EFA8B7 /* RegisterTire.storyboard */,
+				FE5650AC247115F5003BDF5F /* RegisterCar.storyboard */,
+				FE600C472473D2600054DB6F /* SearchScreen.storyboard */,
+				FE8A781F2494A9DA00E1CA2A /* ManagesTiresScreen.storyboard */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		2E5F35712436F5E50072B3C4 = {
+			isa = PBXGroup;
+			children = (
+				2E5F357C2436F5E50072B3C4 /* BridgeStone */,
+				2E5F35962436F5E70072B3C4 /* BridgeStoneTests */,
+				2E5F35A12436F5E70072B3C4 /* BridgeStoneUITests */,
+				2E5F357B2436F5E50072B3C4 /* Products */,
+				2449407B2D8E6E79B542DE61 /* Pods */,
+				3222EB3120F4BA080FA409CE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2E5F357B2436F5E50072B3C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E5F357A2436F5E50072B3C4 /* Toolbox.app */,
+				2E5F35932436F5E70072B3C4 /* BridgeStoneTests.xctest */,
+				2E5F359E2436F5E70072B3C4 /* BridgeStoneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E5F357C2436F5E50072B3C4 /* BridgeStone */ = {
+			isa = PBXGroup;
+			children = (
+				2E22CA0624372512005B0D13 /* Interface */,
+				2EB96847244C9C5B003DE24E /* ForgotPassword */,
+				2EE9E894244C444300A4CCD9 /* Fleet */,
+				FE1630002459761F00D42672 /* Menu */,
+				FE16300B245981B600D42672 /* ChooseRegister */,
+				FE4BF29D246A97D600EFA8B7 /* RegisterTire */,
+				FE5650AE24712BDD003BDF5F /* RegisterCar */,
+				FE600C492473D5FC0054DB6F /* Search */,
+				FE321B8B245BCB64000DF92B /* Profile */,
+				FE679AFA2462C4620052490C /* Dialog */,
+				2EE8549F244CA963008247D4 /* Language */,
+				2E84A8EE244C070200E1563D /* EnumModel */,
+				2E84A8E7244C021900E1563D /* Service */,
+				2EE9E88D244C402900A4CCD9 /* CoreData */,
+				2EAA6ECB244B0D080070C2A7 /* Custom */,
+				FE6ED98C244EC8DB00355BCB /* Fonts */,
+				2E5F357D2436F5E50072B3C4 /* AppDelegate.swift */,
+				2E5F357F2436F5E50072B3C4 /* SceneDelegate.swift */,
+				2E5F35812436F5E50072B3C4 /* ViewController.swift */,
+				2E84A8E3244C003D00E1563D /* LoginViewModel.swift */,
+				2E84A8E5244C01DC00E1563D /* LoginViewModelDelegate.swift */,
+				2E5F35832436F5E50072B3C4 /* Main.storyboard */,
+				2E5F35892436F5E70072B3C4 /* Assets.xcassets */,
+				2E5F358B2436F5E70072B3C4 /* LaunchScreen.storyboard */,
+				2E5F358E2436F5E70072B3C4 /* Info.plist */,
+				FEF5F87D24650BBC00F638CE /* logo120.jpg */,
+				FEF5F87C24650BBB00F638CE /* logo360.jpg */,
+				2E5F35862436F5E50072B3C4 /* BridgeStone.xcdatamodeld */,
+			);
+			path = BridgeStone;
+			sourceTree = "<group>";
+		};
+		2E5F35962436F5E70072B3C4 /* BridgeStoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E5F35972436F5E70072B3C4 /* BridgeStoneTests.swift */,
+				2E5F35992436F5E70072B3C4 /* Info.plist */,
+			);
+			path = BridgeStoneTests;
+			sourceTree = "<group>";
+		};
+		2E5F35A12436F5E70072B3C4 /* BridgeStoneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E5F35A22436F5E70072B3C4 /* BridgeStoneUITests.swift */,
+				2E5F35A42436F5E70072B3C4 /* Info.plist */,
+			);
+			path = BridgeStoneUITests;
+			sourceTree = "<group>";
+		};
+		2E84A8E7244C021900E1563D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FE6ED9A0244F00C300355BCB /* ObjectModel */,
+				2E84A8E8244C022A00E1563D /* ServiceWrapper.swift */,
+				2E84A8EA244C027000E1563D /* WebServiceURL.swift */,
+				2E84A8EC244C064600E1563D /* ServiceWrapperProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2E84A8EE244C070200E1563D /* EnumModel */ = {
+			isa = PBXGroup;
+			children = (
+				2E84A8EF244C070E00E1563D /* Enum.swift */,
+			);
+			path = EnumModel;
+			sourceTree = "<group>";
+		};
+		2EAA6ECB244B0D080070C2A7 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				2EAA6ECC244B0D4D0070C2A7 /* Button.swift */,
+				FE6ED995244ED6EB00355BCB /* View.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		2EB96847244C9C5B003DE24E /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				2EB96848244C9C6C003DE24E /* ForgotPasswordVC.swift */,
+				FE706C8124519F2C001E10E5 /* ForgotPasswordView.swift */,
+				FE706C8324519F4F001E10E5 /* ForgotPasswordModel.swift */,
+				FE706C8524519F73001E10E5 /* ForgotPasswordModelDelegate.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		2EE8549F244CA963008247D4 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				2EE854A4244CAA0D008247D4 /* DefaultLanguage.strings */,
+				2EE854A6244CAC4B008247D4 /* LanguageManager.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		2EE9E88D244C402900A4CCD9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2EE9E88E244C41AB00A4CCD9 /* UserManager.swift */,
+				2EE9E890244C41D600A4CCD9 /* UserManagerProtocol.swift */,
+				2EE9E892244C423100A4CCD9 /* CoreDataManager.swift */,
+				2EE854A8244CB736008247D4 /* CoreDataManagerProtocal.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		2EE9E894244C444300A4CCD9 /* Fleet */ = {
+			isa = PBXGroup;
+			children = (
+				FEA7A02C245045DF00C88531 /* FavoriteFleet */,
+				FE6ED997244ED83600355BCB /* AllFleet */,
+				FE0CBBF12455EC64001713C1 /* AddNewFleet */,
+				2EE9E895244C447600A4CCD9 /* FleetVC.swift */,
+				2EC5C048244D3C570000F53E /* FleetView.swift */,
+				2EC5C04A244D3C940000F53E /* FleetCollectionViewCell.swift */,
+			);
+			path = Fleet;
+			sourceTree = "<group>";
+		};
+		3222EB3120F4BA080FA409CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D20539E463F051068BD99F0B /* Pods_BridgeStone.framework */,
+				9A1915D41A547CD4CBE61DDB /* Pods_BridgeStone_BridgeStoneUITests.framework */,
+				58FA79B5234FC2B1A654DB9B /* Pods_BridgeStoneTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE0A1BF524877A4C005FC9EA /* DialogCarStatus */ = {
+			isa = PBXGroup;
+			children = (
+				FE0A1BF624877A6F005FC9EA /* DialogCarStatusVC.swift */,
+			);
+			path = DialogCarStatus;
+			sourceTree = "<group>";
+		};
+		FE0B5EE124872C8C0091C94F /* CarDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FE0A1BF524877A4C005FC9EA /* DialogCarStatus */,
+				FE0B5EE224872CCA0091C94F /* CarDetailVC.swift */,
+			);
+			path = CarDetail;
+			sourceTree = "<group>";
+		};
+		FE0C526224751AD90055731A /* DialogAddJobSite */ = {
+			isa = PBXGroup;
+			children = (
+				FE0C526324752E280055731A /* DialogAddJobSiteVC.swift */,
+				FE0C5267247530060055731A /* DialogAddJobSiteModel.swift */,
+				FE0C52692475301C0055731A /* DialogAddJobSiteModelDelegate.swift */,
+			);
+			path = DialogAddJobSite;
+			sourceTree = "<group>";
+		};
+		FE0C526B24753F6D0055731A /* RegisterTireTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				FE0C526C2475403B0055731A /* RegisterTireTemplateVC.swift */,
+				FE0CBA43247622170045B9D4 /* RegisterTireTemplateView.swift */,
+				FE0CBA45247629C60045B9D4 /* RegisterTireTemplateModel.swift */,
+				FE0CBA4724762ADB0045B9D4 /* RegisterTireTemplateModelDelegate.swift */,
+			);
+			path = RegisterTireTemplate;
+			sourceTree = "<group>";
+		};
+		FE0CBBF12455EC64001713C1 /* AddNewFleet */ = {
+			isa = PBXGroup;
+			children = (
+				FE0CBBF22455ECD3001713C1 /* AddNewFleetVC.swift */,
+				FE3A5727245676B30097E5C9 /* AddNewFleetTableViewCell.swift */,
+				FE3A572924567B710097E5C9 /* AddNewFleetModel.swift */,
+				FE3A572B24567B8C0097E5C9 /* AddNewFleetDelegate.swift */,
+			);
+			path = AddNewFleet;
+			sourceTree = "<group>";
+		};
+		FE146C33247B764F0060B026 /* SearchTireAdvance */ = {
+			isa = PBXGroup;
+			children = (
+				FE146C34247B76810060B026 /* SearchTireAdvanceVC.swift */,
+				FE4EA9D8248268EF00AB12F5 /* DialogOrderbyVC.swift */,
+			);
+			path = SearchTireAdvance;
+			sourceTree = "<group>";
+		};
+		FE146C36247B79EA0060B026 /* SearchCarAdvance */ = {
+			isa = PBXGroup;
+			children = (
+				FE146C37247B7A0B0060B026 /* SearchCarAdvanceVC.swift */,
+			);
+			path = SearchCarAdvance;
+			sourceTree = "<group>";
+		};
+		FE1630002459761F00D42672 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				FE1630012459765000D42672 /* MenuVC.swift */,
+				FE1630032459766D00D42672 /* MenuView.swift */,
+				FE1630052459768400D42672 /* MenuModel.swift */,
+				FE1630072459769C00D42672 /* MenuModelDelegate.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		FE16300B245981B600D42672 /* ChooseRegister */ = {
+			isa = PBXGroup;
+			children = (
+				FE16300C245981DE00D42672 /* ChooseRegisterVC.swift */,
+				FE16300E245981F500D42672 /* ChooseRegisterView.swift */,
+				FE1630102459821500D42672 /* ChooseRegisterModel.swift */,
+				FE1630122459823400D42672 /* ChooseRegisterModelDelegate.swift */,
+			);
+			path = ChooseRegister;
+			sourceTree = "<group>";
+		};
+		FE181FB92477BD8800A23645 /* AddValue */ = {
+			isa = PBXGroup;
+			children = (
+				FE181FBA2477BDE400A23645 /* AddTireDepthVC.swift */,
+				FE181FBC2477D34F00A23645 /* AddTirePressureVC.swift */,
+			);
+			path = AddValue;
+			sourceTree = "<group>";
+		};
+		FE224FC02472CB190023E121 /* DesignTireAfter */ = {
+			isa = PBXGroup;
+			children = (
+				FE224FC12472CB620023E121 /* DesignTireAfterVC.swift */,
+				FE224FC32472CB8D0023E121 /* DesignTireAfterTableViewCell.swift */,
+				FE224FC52472CBC60023E121 /* DesignTireAfterModel.swift */,
+				FE224FC72472CBE20023E121 /* DesignTireAfterModelDelegate.swift */,
+			);
+			path = DesignTireAfter;
+			sourceTree = "<group>";
+		};
+		FE321B8B245BCB64000DF92B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FE321B8C245BCB8A000DF92B /* ProfileVC.swift */,
+				FE321B8E245BD0C5000DF92B /* ProfileTableViewCell.swift */,
+				FE321B90245BD0E0000DF92B /* ProfileModel.swift */,
+				FE321B92245BD0FA000DF92B /* ProfileModelDelegate.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FE4BF29D246A97D600EFA8B7 /* RegisterTire */ = {
+			isa = PBXGroup;
+			children = (
+				FE4BF2A0246A984200EFA8B7 /* RegisterTireVC.swift */,
+				FE4BF29E246A982B00EFA8B7 /* RegisterTireTableViewCell.swift */,
+				FED1A28D246BCD0300BC8E8E /* RegisterTireModel.swift */,
+				FED1A28F246BCD2600BC8E8E /* RegisterTireModelDelegate.swift */,
+				FE566B47246D37C80009C82D /* SelectDesignTire */,
+				FE224FC02472CB190023E121 /* DesignTireAfter */,
+				FEA3ED99246FB84700EB954A /* JobSite */,
+				FE7F6978247225C100F05ACE /* RegisterTireSuccess */,
+				FE0C526B24753F6D0055731A /* RegisterTireTemplate */,
+			);
+			path = RegisterTire;
+			sourceTree = "<group>";
+		};
+		FE5650AE24712BDD003BDF5F /* RegisterCar */ = {
+			isa = PBXGroup;
+			children = (
+				FE5650AF24712C1E003BDF5F /* RegisterCarVC.swift */,
+				FE5650B124712D81003BDF5F /* RegisterCarTableViewCell.swift */,
+				FE5650B3247134E1003BDF5F /* RegisterCarModel.swift */,
+				FE5650B5247134F3003BDF5F /* RegisterCarModelDelegate.swift */,
+				FE5650B724713EEC003BDF5F /* CarStructure */,
+				FE59C7E8247241BF00564BAA /* StandardMaintenance */,
+			);
+			path = RegisterCar;
+			sourceTree = "<group>";
+		};
+		FE5650B724713EEC003BDF5F /* CarStructure */ = {
+			isa = PBXGroup;
+			children = (
+				FE5650B824713F15003BDF5F /* CarStructureVC.swift */,
+				FE5650BA2471403F003BDF5F /* CarStructureTableViewCell.swift */,
+				FE5650BC24714093003BDF5F /* CarStructureModel.swift */,
+				FE5650BE247140A4003BDF5F /* CarStructureModelDelegate.swift */,
+				FE600C3E2473B3B30054DB6F /* DialogCarDetail */,
+			);
+			path = CarStructure;
+			sourceTree = "<group>";
+		};
+		FE566B47246D37C80009C82D /* SelectDesignTire */ = {
+			isa = PBXGroup;
+			children = (
+				FE566B48246D38000009C82D /* SelectDesignTireVC.swift */,
+				FE566B4A246D3AA80009C82D /* SelectDesignTireTableViewCell.swift */,
+				FE566B4C246D3C3A0009C82D /* SelectDesignTireModel.swift */,
+				FE566B4E246D3C540009C82D /* SelectDesignTireModelDelegate.swift */,
+			);
+			path = SelectDesignTire;
+			sourceTree = "<group>";
+		};
+		FE59C7E8247241BF00564BAA /* StandardMaintenance */ = {
+			isa = PBXGroup;
+			children = (
+				FE9BE9B9247699DD00F01015 /* CreateStandardMaintenance */,
+				FE59C7E9247241DD00564BAA /* StandardMaintenanceVC.swift */,
+				FE59C7ED247251D000564BAA /* StandardMaintenanceTableViewCell.swift */,
+				FE59C7EF247251E600564BAA /* StandardMaintenanceModel.swift */,
+				FE59C7F1247251F600564BAA /* StandardMaintenanceModelDelegate.swift */,
+			);
+			path = StandardMaintenance;
+			sourceTree = "<group>";
+		};
+		FE600C3E2473B3B30054DB6F /* DialogCarDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FE600C3F2473B40E0054DB6F /* DialogCarDetailVC.swift */,
+				FE600C412473B4240054DB6F /* DialogCarDetailTableViewCell.swift */,
+				FE600C432473B4370054DB6F /* DialogCarDetailModel.swift */,
+				FE600C452473B4430054DB6F /* DialogCarDetailModelDelegate.swift */,
+			);
+			path = DialogCarDetail;
+			sourceTree = "<group>";
+		};
+		FE600C492473D5FC0054DB6F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FE146C33247B764F0060B026 /* SearchTireAdvance */,
+				FE146C36247B79EA0060B026 /* SearchCarAdvance */,
+				FE0B5EE124872C8C0091C94F /* CarDetail */,
+				FE600C4A2473D6210054DB6F /* SearchVC.swift */,
+				FE600C4C2473D6490054DB6F /* SearchScreenTableViewCell.swift */,
+				FE600C4E2473D6860054DB6F /* SearchModel.swift */,
+				FE600C502473D6B00054DB6F /* SearchModelDelegate.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		FE679AFA2462C4620052490C /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				FE679AFB2462C4B50052490C /* DialogDeleteFleetFavoriteVC.swift */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		FE6ED98C244EC8DB00355BCB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FE6ED98D244EC8F600355BCB /* Roboto-Regular.ttf */,
+				FE6ED98F244EC9B500355BCB /* Roboto-Bold.ttf */,
+				FE6ED991244EC9D400355BCB /* Gibson-Regular.ttf */,
+				FE6ED992244EC9D400355BCB /* Gibson-Bold.ttf */,
+				FE1630162459837D00D42672 /* Sofia-Regular.ttf */,
+				FE2E59FD245DBF04004A79BE /* Poppins-Regular.ttf */,
+				FE2E59FF245DBFB1004A79BE /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FE6ED997244ED83600355BCB /* AllFleet */ = {
+			isa = PBXGroup;
+			children = (
+				FE6ED998244ED87E00355BCB /* AllFleetVC.swift */,
+				FE6ED99A244ED8AD00355BCB /* AllFleetTableViewCell.swift */,
+				FE6ED99C244ED8CC00355BCB /* AllFleetModel.swift */,
+				FE6ED99E244ED8F600355BCB /* AllFleetModelDelegate.swift */,
+			);
+			path = AllFleet;
+			sourceTree = "<group>";
+		};
+		FE6ED9A0244F00C300355BCB /* ObjectModel */ = {
+			isa = PBXGroup;
+			children = (
+				FE6ED9A1244F00E700355BCB /* Fleet.swift */,
+				FE162FFE245956FA00D42672 /* FavoriteFleets.swift */,
+				FEF87AF5245FB3160008939E /* Profile.swift */,
+				FE566B50246D43690009C82D /* TireTemplates.swift */,
+				FE4BEC642470513E00577338 /* Jobsites.swift */,
+				FE5650C02471413B003BDF5F /* CarStructure.swift */,
+				FE59C7EB247246B800564BAA /* Policies.swift */,
+				FE600C522473E51C0054DB6F /* Tire.swift */,
+				FE3340D1247441D8008E3D22 /* Car.swift */,
+				FE0CBA4124761DBA0045B9D4 /* SizeTire.swift */,
+			);
+			path = ObjectModel;
+			sourceTree = "<group>";
+		};
+		FE7F6978247225C100F05ACE /* RegisterTireSuccess */ = {
+			isa = PBXGroup;
+			children = (
+				FE7F6979247225DA00F05ACE /* RegisterTireSuccessVC.swift */,
+			);
+			path = RegisterTireSuccess;
+			sourceTree = "<group>";
+		};
+		FE9BE9B9247699DD00F01015 /* CreateStandardMaintenance */ = {
+			isa = PBXGroup;
+			children = (
+				FE181FB92477BD8800A23645 /* AddValue */,
+				FE9BE9BA24769BFD00F01015 /* CreateStandardMaintenanceVC.swift */,
+				FE9BE9BC24769C1700F01015 /* CreateStandardMaintenanceTableViewCell.swift */,
+				FE9BE9BE24769C4100F01015 /* CreateStandardMaintenanceModel.swift */,
+				FE9BE9C024769C5B00F01015 /* CreateStandardMaintenanceModelDelegate.swift */,
+			);
+			path = CreateStandardMaintenance;
+			sourceTree = "<group>";
+		};
+		FEA3ED99246FB84700EB954A /* JobSite */ = {
+			isa = PBXGroup;
+			children = (
+				FEA3ED9A246FB88500EB954A /* JobSiteVC.swift */,
+				FEA3ED9C246FB8A500EB954A /* JobSiteTableViewCell.swift */,
+				FEA3ED9E246FB8C300EB954A /* JobSiteModel.swift */,
+				FEA3EDA0246FB8D600EB954A /* JobSiteModelDelegate.swift */,
+				FE0C526224751AD90055731A /* DialogAddJobSite */,
+			);
+			path = JobSite;
+			sourceTree = "<group>";
+		};
+		FEA7A02C245045DF00C88531 /* FavoriteFleet */ = {
+			isa = PBXGroup;
+			children = (
+				FEA7A02D2450460E00C88531 /* FavoriteFleetVC.swift */,
+				FE162FF8245955F500D42672 /* FavoriteFleetTableViewCell.swift */,
+				FE162FFA2459560400D42672 /* FavoriteFleetModel.swift */,
+				FE162FFC2459561D00D42672 /* FavoriteFleetModelDelegate.swift */,
+			);
+			path = FavoriteFleet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E5F35792436F5E50072B3C4 /* BridgeStone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E5F35A72436F5E70072B3C4 /* Build configuration list for PBXNativeTarget "BridgeStone" */;
+			buildPhases = (
+				AD2A3C209A43AFBB94437AF5 /* [CP] Check Pods Manifest.lock */,
+				2E5F35762436F5E50072B3C4 /* Sources */,
+				2E5F35772436F5E50072B3C4 /* Frameworks */,
+				2E5F35782436F5E50072B3C4 /* Resources */,
+				9D2F99D60CA3FF428BF995DD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BridgeStone;
+			productName = BridgeStone;
+			productReference = 2E5F357A2436F5E50072B3C4 /* Toolbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E5F35922436F5E70072B3C4 /* BridgeStoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E5F35AA2436F5E70072B3C4 /* Build configuration list for PBXNativeTarget "BridgeStoneTests" */;
+			buildPhases = (
+				E69B6EFED4D5963048B02ADE /* [CP] Check Pods Manifest.lock */,
+				2E5F358F2436F5E70072B3C4 /* Sources */,
+				2E5F35902436F5E70072B3C4 /* Frameworks */,
+				2E5F35912436F5E70072B3C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E5F35952436F5E70072B3C4 /* PBXTargetDependency */,
+			);
+			name = BridgeStoneTests;
+			productName = BridgeStoneTests;
+			productReference = 2E5F35932436F5E70072B3C4 /* BridgeStoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E5F359D2436F5E70072B3C4 /* BridgeStoneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E5F35AD2436F5E70072B3C4 /* Build configuration list for PBXNativeTarget "BridgeStoneUITests" */;
+			buildPhases = (
+				3EBD0ED8D933D460E58B1E72 /* [CP] Check Pods Manifest.lock */,
+				2E5F359A2436F5E70072B3C4 /* Sources */,
+				2E5F359B2436F5E70072B3C4 /* Frameworks */,
+				2E5F359C2436F5E70072B3C4 /* Resources */,
+				052CDC81274DDD339BF1C936 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E5F35A02436F5E70072B3C4 /* PBXTargetDependency */,
+			);
+			name = BridgeStoneUITests;
+			productName = BridgeStoneUITests;
+			productReference = 2E5F359E2436F5E70072B3C4 /* BridgeStoneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E5F35722436F5E50072B3C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Ifrasoft;
+				TargetAttributes = {
+					2E5F35792436F5E50072B3C4 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					2E5F35922436F5E70072B3C4 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 2E5F35792436F5E50072B3C4;
+					};
+					2E5F359D2436F5E70072B3C4 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 2E5F35792436F5E50072B3C4;
+					};
+				};
+			};
+			buildConfigurationList = 2E5F35752436F5E50072B3C4 /* Build configuration list for PBXProject "BridgeStone" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				th,
+			);
+			mainGroup = 2E5F35712436F5E50072B3C4;
+			productRefGroup = 2E5F357B2436F5E50072B3C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E5F35792436F5E50072B3C4 /* BridgeStone */,
+				2E5F35922436F5E70072B3C4 /* BridgeStoneTests */,
+				2E5F359D2436F5E70072B3C4 /* BridgeStoneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E5F35782436F5E50072B3C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE16300A2459819C00D42672 /* ChooseRegisterScreen.storyboard in Resources */,
+				2EE9E88A244C359A00A4CCD9 /* MenuScreen.storyboard in Resources */,
+				2E5F358D2436F5E70072B3C4 /* LaunchScreen.storyboard in Resources */,
+				FE8A78202494A9DA00E1CA2A /* ManagesTiresScreen.storyboard in Resources */,
+				FE6ED98E244EC8F600355BCB /* Roboto-Regular.ttf in Resources */,
+				2E5F358A2436F5E70072B3C4 /* Assets.xcassets in Resources */,
+				FE2E5A00245DBFB1004A79BE /* Poppins-SemiBold.ttf in Resources */,
+				FE600C482473D2600054DB6F /* SearchScreen.storyboard in Resources */,
+				FE6ED994244EC9D400355BCB /* Gibson-Bold.ttf in Resources */,
+				FE4BF29C246A969A00EFA8B7 /* RegisterTire.storyboard in Resources */,
+				2EE854A2244CAA0D008247D4 /* DefaultLanguage.strings in Resources */,
+				FEF5F87E24650BBC00F638CE /* logo360.jpg in Resources */,
+				FE679AF92462C0F10052490C /* DialogDeleteFleetFavorite.storyboard in Resources */,
+				FE1630172459837D00D42672 /* Sofia-Regular.ttf in Resources */,
+				FE5650AD247115F5003BDF5F /* RegisterCar.storyboard in Resources */,
+				FEF5F87F24650BBC00F638CE /* logo120.jpg in Resources */,
+				FE6ED990244EC9B500355BCB /* Roboto-Bold.ttf in Resources */,
+				FE2E59FE245DBF04004A79BE /* Poppins-Regular.ttf in Resources */,
+				2EE9E88C244C386300A4CCD9 /* FleetScreen.storyboard in Resources */,
+				2EE9E888244C2C8600A4CCD9 /* ForgotPasswordScreen.storyboard in Resources */,
+				2E5F35852436F5E50072B3C4 /* Main.storyboard in Resources */,
+				FE321B8A245BC731000DF92B /* ProfileScreen.storyboard in Resources */,
+				FE6ED993244EC9D400355BCB /* Gibson-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E5F35912436F5E70072B3C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E5F359C2436F5E70072B3C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		052CDC81274DDD339BF1C936 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BridgeStone-BridgeStoneUITests/Pods-BridgeStone-BridgeStoneUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BridgeStone-BridgeStoneUITests/Pods-BridgeStone-BridgeStoneUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BridgeStone-BridgeStoneUITests/Pods-BridgeStone-BridgeStoneUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EBD0ED8D933D460E58B1E72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BridgeStone-BridgeStoneUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D2F99D60CA3FF428BF995DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BridgeStone/Pods-BridgeStone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BridgeStone/Pods-BridgeStone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BridgeStone/Pods-BridgeStone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD2A3C209A43AFBB94437AF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BridgeStone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E69B6EFED4D5963048B02ADE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BridgeStoneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E5F35762436F5E50072B3C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EAA6ECD244B0D4D0070C2A7 /* Button.swift in Sources */,
+				2E84A8ED244C064600E1563D /* ServiceWrapperProtocol.swift in Sources */,
+				2E84A8E9244C022A00E1563D /* ServiceWrapper.swift in Sources */,
+				2E5F35822436F5E50072B3C4 /* ViewController.swift in Sources */,
+				FE600C422473B4240054DB6F /* DialogCarDetailTableViewCell.swift in Sources */,
+				2E84A8F0244C070E00E1563D /* Enum.swift in Sources */,
+				FE5650B924713F15003BDF5F /* CarStructureVC.swift in Sources */,
+				FE9BE9BB24769BFD00F01015 /* CreateStandardMaintenanceVC.swift in Sources */,
+				FE6ED99F244ED8F600355BCB /* AllFleetModelDelegate.swift in Sources */,
+				FE706C8424519F4F001E10E5 /* ForgotPasswordModel.swift in Sources */,
+				FE0B5EE324872CCA0091C94F /* CarDetailVC.swift in Sources */,
+				FE566B4B246D3AA80009C82D /* SelectDesignTireTableViewCell.swift in Sources */,
+				FE6ED9A2244F00E700355BCB /* Fleet.swift in Sources */,
+				FE6ED996244ED6EB00355BCB /* View.swift in Sources */,
+				FE321B8F245BD0C5000DF92B /* ProfileTableViewCell.swift in Sources */,
+				FE0CBA4824762ADB0045B9D4 /* RegisterTireTemplateModelDelegate.swift in Sources */,
+				2E84A8E4244C003D00E1563D /* LoginViewModel.swift in Sources */,
+				FE0CBA44247622170045B9D4 /* RegisterTireTemplateView.swift in Sources */,
+				FE59C7EC247246B800564BAA /* Policies.swift in Sources */,
+				FE0A1BF724877A6F005FC9EA /* DialogCarStatusVC.swift in Sources */,
+				FE9BE9C124769C5B00F01015 /* CreateStandardMaintenanceModelDelegate.swift in Sources */,
+				2EE9E88F244C41AB00A4CCD9 /* UserManager.swift in Sources */,
+				FE566B49246D38000009C82D /* SelectDesignTireVC.swift in Sources */,
+				FE9BE9BF24769C4100F01015 /* CreateStandardMaintenanceModel.swift in Sources */,
+				FE600C512473D6B00054DB6F /* SearchModelDelegate.swift in Sources */,
+				FE146C38247B7A0B0060B026 /* SearchCarAdvanceVC.swift in Sources */,
+				FEA3ED9F246FB8C300EB954A /* JobSiteModel.swift in Sources */,
+				FE6ED99D244ED8CC00355BCB /* AllFleetModel.swift in Sources */,
+				FE7F697A247225DA00F05ACE /* RegisterTireSuccessVC.swift in Sources */,
+				FE0C526424752E280055731A /* DialogAddJobSiteVC.swift in Sources */,
+				FE5650B4247134E1003BDF5F /* RegisterCarModel.swift in Sources */,
+				FE6ED99B244ED8AD00355BCB /* AllFleetTableViewCell.swift in Sources */,
+				FE566B4D246D3C3A0009C82D /* SelectDesignTireModel.swift in Sources */,
+				FE1630082459769C00D42672 /* MenuModelDelegate.swift in Sources */,
+				2EE9E896244C447600A4CCD9 /* FleetVC.swift in Sources */,
+				FE679AFC2462C4B50052490C /* DialogDeleteFleetFavoriteVC.swift in Sources */,
+				FE4BF2A1246A984200EFA8B7 /* RegisterTireVC.swift in Sources */,
+				FE6ED999244ED87E00355BCB /* AllFleetVC.swift in Sources */,
+				FE5650B6247134F3003BDF5F /* RegisterCarModelDelegate.swift in Sources */,
+				FE321B8D245BCB8A000DF92B /* ProfileVC.swift in Sources */,
+				FE16300F245981F500D42672 /* ChooseRegisterView.swift in Sources */,
+				FE5650BB2471403F003BDF5F /* CarStructureTableViewCell.swift in Sources */,
+				2EE854A9244CB736008247D4 /* CoreDataManagerProtocal.swift in Sources */,
+				FE0CBA46247629C60045B9D4 /* RegisterTireTemplateModel.swift in Sources */,
+				2EE9E891244C41D600A4CCD9 /* UserManagerProtocol.swift in Sources */,
+				FE566B51246D43690009C82D /* TireTemplates.swift in Sources */,
+				FE600C4F2473D6860054DB6F /* SearchModel.swift in Sources */,
+				FE600C402473B40E0054DB6F /* DialogCarDetailVC.swift in Sources */,
+				FE5650BD24714093003BDF5F /* CarStructureModel.swift in Sources */,
+				2E84A8E6244C01DC00E1563D /* LoginViewModelDelegate.swift in Sources */,
+				FE1630062459768400D42672 /* MenuModel.swift in Sources */,
+				FEA3ED9D246FB8A500EB954A /* JobSiteTableViewCell.swift in Sources */,
+				FE566B4F246D3C540009C82D /* SelectDesignTireModelDelegate.swift in Sources */,
+				FE600C4D2473D6490054DB6F /* SearchScreenTableViewCell.swift in Sources */,
+				FE162FFF245956FA00D42672 /* FavoriteFleets.swift in Sources */,
+				FE0CBBF32455ECD3001713C1 /* AddNewFleetVC.swift in Sources */,
+				FEA7A02E2450460E00C88531 /* FavoriteFleetVC.swift in Sources */,
+				2E5F357E2436F5E50072B3C4 /* AppDelegate.swift in Sources */,
+				FE59C7EE247251D100564BAA /* StandardMaintenanceTableViewCell.swift in Sources */,
+				2E84A8EB244C027000E1563D /* WebServiceURL.swift in Sources */,
+				FE5650C12471413B003BDF5F /* CarStructure.swift in Sources */,
+				FE224FC62472CBC60023E121 /* DesignTireAfterModel.swift in Sources */,
+				2EC5C049244D3C570000F53E /* FleetView.swift in Sources */,
+				FE1630112459821500D42672 /* ChooseRegisterModel.swift in Sources */,
+				2E5F35882436F5E50072B3C4 /* BridgeStone.xcdatamodeld in Sources */,
+				FED1A28E246BCD0300BC8E8E /* RegisterTireModel.swift in Sources */,
+				FE4EA9D9248268EF00AB12F5 /* DialogOrderbyVC.swift in Sources */,
+				FE1630042459766D00D42672 /* MenuView.swift in Sources */,
+				FE0C526D2475403B0055731A /* RegisterTireTemplateVC.swift in Sources */,
+				FE0C526A2475301C0055731A /* DialogAddJobSiteModelDelegate.swift in Sources */,
+				FE0CBA4224761DBA0045B9D4 /* SizeTire.swift in Sources */,
+				FE1630132459823400D42672 /* ChooseRegisterModelDelegate.swift in Sources */,
+				FE706C8224519F2C001E10E5 /* ForgotPasswordView.swift in Sources */,
+				FEF87AF6245FB3160008939E /* Profile.swift in Sources */,
+				FE600C442473B4370054DB6F /* DialogCarDetailModel.swift in Sources */,
+				FE600C462473B4430054DB6F /* DialogCarDetailModelDelegate.swift in Sources */,
+				FE9BE9BD24769C1700F01015 /* CreateStandardMaintenanceTableViewCell.swift in Sources */,
+				FE59C7EA247241DD00564BAA /* StandardMaintenanceVC.swift in Sources */,
+				FE3A572A24567B710097E5C9 /* AddNewFleetModel.swift in Sources */,
+				FE706C8624519F73001E10E5 /* ForgotPasswordModelDelegate.swift in Sources */,
+				FE600C532473E51C0054DB6F /* Tire.swift in Sources */,
+				FE321B91245BD0E0000DF92B /* ProfileModel.swift in Sources */,
+				2EE9E893244C423100A4CCD9 /* CoreDataManager.swift in Sources */,
+				FE146C35247B76810060B026 /* SearchTireAdvanceVC.swift in Sources */,
+				FEA3ED9B246FB88500EB954A /* JobSiteVC.swift in Sources */,
+				FE4BEC652470513E00577338 /* Jobsites.swift in Sources */,
+				FE5650B024712C1E003BDF5F /* RegisterCarVC.swift in Sources */,
+				FE321B93245BD0FA000DF92B /* ProfileModelDelegate.swift in Sources */,
+				FE162FFB2459560400D42672 /* FavoriteFleetModel.swift in Sources */,
+				2EB96849244C9C6C003DE24E /* ForgotPasswordVC.swift in Sources */,
+				2EE854A7244CAC4B008247D4 /* LanguageManager.swift in Sources */,
+				FE181FBB2477BDE400A23645 /* AddTireDepthVC.swift in Sources */,
+				FE0C5268247530060055731A /* DialogAddJobSiteModel.swift in Sources */,
+				FE1630022459765000D42672 /* MenuVC.swift in Sources */,
+				FE224FC42472CB8D0023E121 /* DesignTireAfterTableViewCell.swift in Sources */,
+				FE162FF9245955F500D42672 /* FavoriteFleetTableViewCell.swift in Sources */,
+				FE162FFD2459561D00D42672 /* FavoriteFleetModelDelegate.swift in Sources */,
+				FE3A572C24567B8C0097E5C9 /* AddNewFleetDelegate.swift in Sources */,
+				2E5F35802436F5E50072B3C4 /* SceneDelegate.swift in Sources */,
+				FE224FC82472CBE20023E121 /* DesignTireAfterModelDelegate.swift in Sources */,
+				2EC5C04B244D3C950000F53E /* FleetCollectionViewCell.swift in Sources */,
+				FE5650BF247140A4003BDF5F /* CarStructureModelDelegate.swift in Sources */,
+				FE600C4B2473D6210054DB6F /* SearchVC.swift in Sources */,
+				FE4BF29F246A982B00EFA8B7 /* RegisterTireTableViewCell.swift in Sources */,
+				FE3A5728245676B30097E5C9 /* AddNewFleetTableViewCell.swift in Sources */,
+				FEA3EDA1246FB8D600EB954A /* JobSiteModelDelegate.swift in Sources */,
+				FE59C7F2247251F600564BAA /* StandardMaintenanceModelDelegate.swift in Sources */,
+				FE16300D245981DE00D42672 /* ChooseRegisterVC.swift in Sources */,
+				FE181FBD2477D34F00A23645 /* AddTirePressureVC.swift in Sources */,
+				FED1A290246BCD2600BC8E8E /* RegisterTireModelDelegate.swift in Sources */,
+				FE224FC22472CB620023E121 /* DesignTireAfterVC.swift in Sources */,
+				FE3340D2247441D8008E3D22 /* Car.swift in Sources */,
+				FE59C7F0247251E600564BAA /* StandardMaintenanceModel.swift in Sources */,
+				FE5650B224712D81003BDF5F /* RegisterCarTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E5F358F2436F5E70072B3C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E5F35982436F5E70072B3C4 /* BridgeStoneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E5F359A2436F5E70072B3C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E5F35A32436F5E70072B3C4 /* BridgeStoneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E5F35952436F5E70072B3C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E5F35792436F5E50072B3C4 /* BridgeStone */;
+			targetProxy = 2E5F35942436F5E70072B3C4 /* PBXContainerItemProxy */;
+		};
+		2E5F35A02436F5E70072B3C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E5F35792436F5E50072B3C4 /* BridgeStone */;
+			targetProxy = 2E5F359F2436F5E70072B3C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E5F35832436F5E50072B3C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EE8549A244CA91B008247D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E5F358B2436F5E70072B3C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EE8549B244CA91B008247D4 /* Base */,
+				2EE8549D244CA936008247D4 /* th */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2EE854A4244CAA0D008247D4 /* DefaultLanguage.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EE854A3244CAA0D008247D4 /* en */,
+				2EE854A5244CAA57008247D4 /* th */,
+			);
+			name = DefaultLanguage.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E5F35A52436F5E70072B3C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E5F35A62436F5E70072B3C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E5F35A82436F5E70072B3C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C6B4E45BB255567EE89D6F5 /* Pods-BridgeStone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JV39BS58TD;
+				INFOPLIST_FILE = BridgeStone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.globetech.tmt.SmartDrive;
+				PRODUCT_NAME = Toolbox;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E5F35A92436F5E70072B3C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716B2CE2C50D9E6C1CF3407E /* Pods-BridgeStone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JV39BS58TD;
+				INFOPLIST_FILE = BridgeStone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.globetech.tmt.SmartDrive;
+				PRODUCT_NAME = Toolbox;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E5F35AB2436F5E70072B3C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3F51365A1BA4547FAEA7999 /* Pods-BridgeStoneTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BridgeStoneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ifrasoft.BridgeStoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BridgeStone.app/BridgeStone";
+			};
+			name = Debug;
+		};
+		2E5F35AC2436F5E70072B3C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCC4F7578726AE5C0E5DC1C6 /* Pods-BridgeStoneTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BridgeStoneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ifrasoft.BridgeStoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BridgeStone.app/BridgeStone";
+			};
+			name = Release;
+		};
+		2E5F35AE2436F5E70072B3C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5BF8BB3ECB8F12F06CCFFBA /* Pods-BridgeStone-BridgeStoneUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BridgeStoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ifrasoft.BridgeStoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BridgeStone;
+			};
+			name = Debug;
+		};
+		2E5F35AF2436F5E70072B3C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A704FC13B299DC424FA077E2 /* Pods-BridgeStone-BridgeStoneUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BridgeStoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ifrasoft.BridgeStoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BridgeStone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E5F35752436F5E50072B3C4 /* Build configuration list for PBXProject "BridgeStone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E5F35A52436F5E70072B3C4 /* Debug */,
+				2E5F35A62436F5E70072B3C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E5F35A72436F5E70072B3C4 /* Build configuration list for PBXNativeTarget "BridgeStone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E5F35A82436F5E70072B3C4 /* Debug */,
+				2E5F35A92436F5E70072B3C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E5F35AA2436F5E70072B3C4 /* Build configuration list for PBXNativeTarget "BridgeStoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E5F35AB2436F5E70072B3C4 /* Debug */,
+				2E5F35AC2436F5E70072B3C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E5F35AD2436F5E70072B3C4 /* Build configuration list for PBXNativeTarget "BridgeStoneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E5F35AE2436F5E70072B3C4 /* Debug */,
+				2E5F35AF2436F5E70072B3C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2E5F35862436F5E50072B3C4 /* BridgeStone.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2E5F35872436F5E50072B3C4 /* BridgeStone.xcdatamodel */,
+			);
+			currentVersion = 2E5F35872436F5E50072B3C4 /* BridgeStone.xcdatamodel */;
+			path = BridgeStone.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2E5F35722436F5E50072B3C4 /* Project object */;
+}

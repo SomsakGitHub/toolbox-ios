@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LQE-DI-pIj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--MenuScreen-->
+        <scene sceneID="u2w-au-Eoy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MenuScreen" id="6jB-Cs-IdJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2Aw-cc-ouR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dln-X8-WXJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1093" y="-214"/>
+        </scene>
+        <!--Choose RegisterVC-->
+        <scene sceneID="tGr-Cq-8Fs">
+            <objects>
+                <viewController id="LQE-DI-pIj" customClass="ChooseRegisterVC" customModule="Toolbox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6YD-ln-cE1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHy-KL-24s">
+                                <rect key="frame" x="0.0" y="44" width="414" height="62.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sM9-0w-WIR">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="62.5"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <segue destination="6jB-Cs-IdJ" kind="show" id="m9B-Xc-Tok"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="sM9-0w-WIR" firstAttribute="width" secondItem="ZHy-KL-24s" secondAttribute="width" multiplier="0.2" id="12Z-Zf-Z3g"/>
+                                    <constraint firstItem="sM9-0w-WIR" firstAttribute="leading" secondItem="ZHy-KL-24s" secondAttribute="leading" id="AfS-AE-Cii"/>
+                                    <constraint firstItem="sM9-0w-WIR" firstAttribute="centerY" secondItem="ZHy-KL-24s" secondAttribute="centerY" id="lnZ-7J-wDP"/>
+                                    <constraint firstItem="sM9-0w-WIR" firstAttribute="height" secondItem="ZHy-KL-24s" secondAttribute="height" id="yvf-LX-D5d"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="คุณต้องการลงทะเบียน?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acT-ZO-InL">
+                                <rect key="frame" x="0.0" y="141.5" width="414" height="28.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="คุณสามารถเลือกลงทะเบียนรถ หรือ ลงทะเบียนยางได้เบื้องต้น หากต้องการเพิ่มข้อมูลอื่นๆ ให้ติดต่อฝ่ายดูแล" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsY-f6-myT">
+                                <rect key="frame" x="45" y="183" width="324" height="30.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="professional-auto-mech" translatesAutoresizingMaskIntoConstraints="NO" id="dgK-GE-WlH">
+                                <rect key="frame" x="79.5" y="236.5" width="255" height="361"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cq7-aa-wRB">
+                                <rect key="frame" x="24" y="677.5" width="366" height="52"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBO-Z2-fct" customClass="ButtonRound" customModule="Toolbox" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="175.5" height="52"/>
+                                        <color key="backgroundColor" red="0.74117647058823533" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="ลงทะเบียนรถ" image="chevron.left" catalog="system">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="registerCarsClick:" destination="LQE-DI-pIj" eventType="touchUpInside" id="R8o-eQ-cBX"/>
+                                            <segue destination="D69-Ta-ERc" kind="show" id="HSh-Ts-VtL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYg-1P-vNM" customClass="ButtonRound" customModule="Toolbox" customModuleProvider="target">
+                                        <rect key="frame" x="190.5" y="0.0" width="175.5" height="52"/>
+                                        <color key="backgroundColor" red="0.74117647060000003" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="ลงทะเบียนยาง" image="chevron.left" catalog="system">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="registerTireClick:" destination="LQE-DI-pIj" eventType="touchUpInside" id="HOw-tR-gDh"/>
+                                            <segue destination="c78-uy-k8O" kind="show" id="a24-V7-nSr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="WYg-1P-vNM" firstAttribute="height" secondItem="Cq7-aa-wRB" secondAttribute="height" id="501-oe-vjo"/>
+                                    <constraint firstItem="WBO-Z2-fct" firstAttribute="centerY" secondItem="Cq7-aa-wRB" secondAttribute="centerY" id="EBw-5C-j9s"/>
+                                    <constraint firstItem="WBO-Z2-fct" firstAttribute="leading" secondItem="Cq7-aa-wRB" secondAttribute="leading" id="K7N-hb-s3g"/>
+                                    <constraint firstItem="WYg-1P-vNM" firstAttribute="width" secondItem="Cq7-aa-wRB" secondAttribute="width" multiplier="0.48" id="aKR-MU-T4s"/>
+                                    <constraint firstItem="WBO-Z2-fct" firstAttribute="height" secondItem="Cq7-aa-wRB" secondAttribute="height" id="tav-ee-eqP"/>
+                                    <constraint firstItem="WBO-Z2-fct" firstAttribute="width" secondItem="Cq7-aa-wRB" secondAttribute="width" multiplier="0.48" id="vKG-Wa-kd8"/>
+                                    <constraint firstAttribute="trailing" secondItem="WYg-1P-vNM" secondAttribute="trailing" id="xd5-4V-32b"/>
+                                    <constraint firstItem="WYg-1P-vNM" firstAttribute="centerY" secondItem="Cq7-aa-wRB" secondAttribute="centerY" id="y72-M4-mOX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16470588235294117" green="0.1803921568627451" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="acT-ZO-InL" firstAttribute="top" secondItem="ZHy-KL-24s" secondAttribute="bottom" constant="35" id="0eg-Xh-dJT"/>
+                            <constraint firstItem="acT-ZO-InL" firstAttribute="width" secondItem="6YD-ln-cE1" secondAttribute="width" id="7Lf-oR-LgY"/>
+                            <constraint firstItem="lsY-f6-myT" firstAttribute="top" secondItem="acT-ZO-InL" secondAttribute="bottom" constant="13" id="7P1-AA-Nok"/>
+                            <constraint firstItem="dgK-GE-WlH" firstAttribute="height" secondItem="6YD-ln-cE1" secondAttribute="height" multiplier="0.403" id="EMo-qE-2dr"/>
+                            <constraint firstItem="lsY-f6-myT" firstAttribute="centerX" secondItem="6YD-ln-cE1" secondAttribute="centerX" id="EQV-sa-avF"/>
+                            <constraint firstItem="Cq7-aa-wRB" firstAttribute="trailing" secondItem="4in-jj-9ty" secondAttribute="trailing" constant="-24" id="OGE-ae-W77"/>
+                            <constraint firstItem="Cq7-aa-wRB" firstAttribute="height" secondItem="6YD-ln-cE1" secondAttribute="height" multiplier="0.058" id="PON-mF-cAx"/>
+                            <constraint firstItem="ZHy-KL-24s" firstAttribute="top" secondItem="4in-jj-9ty" secondAttribute="top" id="VRG-95-3oE"/>
+                            <constraint firstItem="ZHy-KL-24s" firstAttribute="centerX" secondItem="6YD-ln-cE1" secondAttribute="centerX" id="fmo-eg-Ztk"/>
+                            <constraint firstItem="ZHy-KL-24s" firstAttribute="width" secondItem="6YD-ln-cE1" secondAttribute="width" id="gLV-Zt-L3O"/>
+                            <constraint firstItem="lsY-f6-myT" firstAttribute="leading" secondItem="6YD-ln-cE1" secondAttribute="leading" constant="45" id="o9K-i0-6vA"/>
+                            <constraint firstAttribute="trailing" secondItem="lsY-f6-myT" secondAttribute="trailing" constant="45" id="pb3-yR-Cdn"/>
+                            <constraint firstItem="dgK-GE-WlH" firstAttribute="top" secondItem="lsY-f6-myT" secondAttribute="bottom" constant="23" id="qJk-bw-L5p"/>
+                            <constraint firstItem="ZHy-KL-24s" firstAttribute="height" secondItem="6YD-ln-cE1" secondAttribute="height" multiplier="0.0697545" id="qtY-eP-BTu"/>
+                            <constraint firstItem="dgK-GE-WlH" firstAttribute="width" secondItem="6YD-ln-cE1" secondAttribute="width" multiplier="0.616" id="sSL-bP-Wo1"/>
+                            <constraint firstItem="dgK-GE-WlH" firstAttribute="centerX" secondItem="6YD-ln-cE1" secondAttribute="centerX" id="tsi-Rp-AmM"/>
+                            <constraint firstItem="acT-ZO-InL" firstAttribute="centerX" secondItem="6YD-ln-cE1" secondAttribute="centerX" id="uRO-fd-mep"/>
+                            <constraint firstItem="Cq7-aa-wRB" firstAttribute="top" secondItem="dgK-GE-WlH" secondAttribute="bottom" constant="80" id="yBJ-vD-SCQ"/>
+                            <constraint firstItem="Cq7-aa-wRB" firstAttribute="leading" secondItem="4in-jj-9ty" secondAttribute="leading" constant="24" id="yaY-6t-hBv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4in-jj-9ty"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="lsY-f6-myT" id="x3A-BS-WAL"/>
+                        <outlet property="registerCarBTN" destination="WBO-Z2-fct" id="4kI-PM-qPg"/>
+                        <outlet property="registerTireBTN" destination="WYg-1P-vNM" id="ooC-Ez-grO"/>
+                        <outlet property="topicLabel" destination="acT-ZO-InL" id="6uu-HW-0f6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0VQ-Gs-UVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-283" y="39"/>
+        </scene>
+        <!--RegisterCar-->
+        <scene sceneID="9mS-wq-Zgy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RegisterCar" id="D69-Ta-ERc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rBz-tw-prY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yIn-hx-ORo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="-30"/>
+        </scene>
+        <!--RegisterTire-->
+        <scene sceneID="tmx-d2-uCZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RegisterTire" id="c78-uy-k8O" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0vr-il-dfN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SyA-a3-NqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="131"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="24" height="24"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="professional-auto-mech" width="255" height="361"/>
+    </resources>
+</document>

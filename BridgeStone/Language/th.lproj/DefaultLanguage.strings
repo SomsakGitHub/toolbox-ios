@@ -1,0 +1,189 @@
+/* 
+  DefaultLanguage.strings
+  BridgeStone
+
+  Created by somsak.kaeworasan on 19/4/2563 BE.
+  Copyright © 2563 Ifrasoft. All rights reserved.
+*/
+
+"login" = "เข้าสู่ระบบ";
+"username" = "     ชื่อผู้ใช้";
+"password" = "     รหัสผ่าน";
+"forgot_password" = "ลืมรหัสผ่าน";
+"your_email" = "     อีเมลล์ของคุณ";
+"confirm_email" = "ยืนยันอีเมลล์";
+
+"email_has_been_confirmed" = "ยืนยันอีเมลล์เรียบร้อยแล้วกรุณาเช็คอีเมลของคุณ";
+
+"favorite" = "สาขาโปรด";
+"all_fleet" = "สาขาทั้งหมด";
+
+"you_want_remove_from_fleet_favorite" = "คุณต้องการลบออกจาก Fleet โปรด?";
+"cancel" = "ยกเลิก";
+"confirm" = "ยืนยัน";
+
+"add_new_fleet" = "เพิ่มสาขา";
+"fleet_name" = "ชื่อ Fleet";
+"address" = "ที่อยู่";
+"district" = "เขต/อำเภอ";
+"province" = "จังหวัด";
+"email" = "อีเมล";
+
+"fleet_name_place" = "     ชื่อ Fleet";
+"address_place" = "     ที่อยู่";
+"district_place" = "     เขต/อำเภอ";
+"province_place" = "     จังหวัด";
+"email_place" = "     อีเมล";
+
+"specify_name" = "ต้องระบุชื่อ";
+"specify_address" = "ต้องระบุที่อยู่";
+"specify_district" = "ต้องระบุเขต/อำเภอ";
+"specify_province" = "ต้องระบุจังหวัด";
+"specify_email" = "ต้องระบุอีเมลล์";
+
+"register" = "ลงทะเบียน";
+"search_tire" = "ค้นหายาง";
+"search_car" = "ค้นหารถ";
+"profile_setting" = "ตั้งค่าโปรไฟล์";
+"manual" = "คู่มือการใช้งาน";
+"report" = "รายงานผล";
+"logout" = "ออกจากระบบ";
+
+"register" = "ลงทะเบียน";
+
+"save" = "บันทึก";
+
+"topic" = "คุณต้องการลงทะเบียน?";
+"content" = "คุณสามารถเลือกลงทะเบียนรถ หรือ ลงทะเบียนยางได้เบื้องต้น หากต้องการเพิ่มข้อมูลอื่นๆ ให้ติดต่อฝ่ายดูแล";
+"register_car" = "ลงทะเบียนรถ";
+"register_tire" = "ลงทะเบียนยาง";
+
+"license_plate" = "เลขทะเบียนรถ";
+"fill_up_license_plate" = "     กรอกเลขทะเบียนรถ";
+"driver_name" = "ชื่อคนขับ";
+"fill_up_driver_name" = "     กรอกชื่อคนขับ";
+"phone_number" = "เบอร์โทร";
+"fill_up_phone_number" = "     กรอกเบอร์โทร";
+"job_site_car" = "ไซต์งาน";
+"fill_up_job_site" = "     ไซต์งานของคุณ";
+"car_frame" = "โครงรถ";
+"fill_up_car_frame" = "     เลือกโครงรถ";
+"standard_maintenance" = "มาตรฐานการบำรุงรักษา";
+"fill_up_standard_maintenance" = "     เลือกมาตรฐานการบำรุงรักษา";
+
+"specify_license_plate" = "ต้องระบุเลขทะเบียนรถ";
+"specify_driver_name" = "ต้องระบุชื่อคนขับ";
+"specify_phone_number" = "ต้องระบุเบอร์โทร";
+"specify_job_site_car" = "ต้องระบุไซต์งาน";
+"specify_car_frame" = "ต้องระบุโครงรถ";
+"specify_standard_maintenance" = "ต้องระบุมาตรฐานการบำรุงรักษา";
+
+"register_car_next" = "คันถัดไป";
+
+"new_tires" = "ยางใหม่";
+"cast_tires" = "ยางหล่อ";
+"number_tires" = "หมายเลขยาง";
+"number_tire" = "     ใส่หมายเลขของยาง";
+"select_template_tires" = "เลือกรูปแบบยาง";
+"cast_tires_template" = "รูปแบบยางก่อนหล่อ";
+"select_cast_tires_template" = "     เลือกรูปแบบยางก่อนหล่อ";
+"design_tire" = "     เลือกรูปแบบยาง";
+"job_site" = "ไซต์งาน";
+"production_date_tires" = "วันที่ผลิต";
+"production_date" = "     สัปดาห์ที่ผลิต";
+"production_year" = "     ปีที่ผลิต";
+"cast_template_tires" = "รูปแบบยางหลังหล่อ";
+"select_cast_template_tires" = "     เลือกรูปแบบยางหลังหล่อ";
+"number_template_tires" = "หมายเลขยางหลังหล่อ";
+"number_cast_tires" = "     หมายเลขยางหลังหล่อ";
+"detail_tires" = "รายละเอียดยาง : ความลึกของดอกยาง 9 มม.";
+"register_tires_next" = "เส้นถัดไป";
+
+"specify_number_tires" = "ต้องระบุหมายเลขยาง";
+"specify_template_tires" = "ต้องระบุเลือกรูปแบบยาง";
+"specify_production_date" = "ต้องระบุสัปดาห์ที่ผลิต";
+"specify_production_year" = "ต้องระบุปีที่ผลิต";
+"specify_cast_tires_template" = "ต้องระบุรูปแบบยางหลังหล่อ";
+"specify_number_template_tires" = "ต้องระบุหมายเลขยางหล่อ";
+
+"search" = "ค้นหา...";
+
+"create_tires_template" = "สร้างรูปแบบยาง";
+"size" = "ขนาด";
+"tires_size" = "     ขนาดยาง";
+"brands" = "ยี่ห้อ";
+"tires_brands" = "     ยี่ห้อยาง";
+"patterns" = "ลายยาง";
+"tires_patterns" = "     ลายยาง";
+
+"select_job_site" = "เลือกไซต์งาน";
+"job_site_name" = "ชื่อไซต์งาน";
+"job_site_your_name" = "     ชื่อไซต์งานของคุณ";
+
+"select_car_structure" = "เลือกโครงรถ";
+"tractor" = "หัว";
+"trailer" = "หาง";
+"axles" = "เพลา";
+"select_axles" = "เลือกเพลา";
+"wheel" = "ล้อ";
+"select_wheel" = "เลือกล้อ";
+
+"select_standard_maintenance" = "เลือกมาตรฐานการบำรุงรักษา";
+
+"axles_standard_maintenance_name" = "ชื่อมาตรฐานการบำรุงรักษา";
+"axles_name" = "     ชื่อมาตรฐานการบำรุงรักษา";
+"standard_tire_depth" = "     ระดับความลึกดอกยาง";
+"tire_depth" = "ระดับความลึกดอกยาง";
+"standard_tire_pressure" = "     ระดับลมยาง";
+"tire_pressure" = "ระดับลมยาง";
+"warning_depth" = "     ระดับแจ้งเตือน";
+"critical_depth" = "     ระดับค่าอันตราย";
+
+"all_result" = "ผลลัพธ์ทั้งหมด";
+"list" = "รายการ";
+"total_vehicles" = "จำนวนรถ";
+"vehicles" = "คัน";
+"latest_update" = "อัพเดตล่าสุด";
+"license_plate" = "ทะเบียนรถ";
+"active" = "ใช้งาน";
+"not_active" = "ไม่ใช้งาน";
+"search_list" = "รายการค้นหา";
+
+"register_success" = "ลงทะเบียนสำเร็จ";
+"back_to_menu" = "กลับสู่หน้าหลัก";
+
+"car_detail" = "รายละเอียดรถ";
+"name" = "ชื่อ";
+"phone" = "เบอร์";
+"mile" = "ระยะทางทั้งหมด";
+"job_sites" = "ไซต์";
+"latest_check" = "ตรวจสอบล่าสุด";
+"car_status" = "สถานะรถ";
+"next" = "ดำเนินการต่อ";
+
+"select_car_status" = "เลือกสถานะของรถ";
+
+"search_advance" = "การค้นหาขั้นสูง";
+"depth_tires" = "ช่วงความลึกดอกยาง";
+"minimum" = "     ตํ่าสุด";
+"maximum" = "     สูงสุด";
+"sorted_by_latest_update" = "     เรียงตามวันที่อัพเดตล่าสุด";
+"tires_status" = "     สถานะยาง";
+
+"sort_by_latest_date" = "เรียงตามวันที่ล่าสุด";
+"sort_by_oldest_date" = "เรียงตามวันที่เก่าสุด";
+"wait_retread" = "รอหล่อ";
+"in_stock" = "เก็บในคลัง";
+"waste_tires" = "ยางเสีย";
+"in_car" = "ติดรถ";
+
+"tractor_trailer" = "     หัว/หาง";
+"wheel_QTY" = "     จำนวนล้อ";
+"axles_QTY" = "     จำนวนเพลา";
+
+"please_select_size" = "กรุณาเลือกขนาด";
+"please_select_brand" = "กรุณาเลือกยี่ห้อ";
+"please_select_pattern" = "กรุณาเลือกลายยาง";
+"tire_template_duplicate" = "รูปแบบยางนี้มีอยู่แล้ว";
+
+
